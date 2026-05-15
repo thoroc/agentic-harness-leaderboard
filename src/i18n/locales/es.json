@@ -1,0 +1,17 @@
+{
+  "source": {
+    "vercelSkills": "Vercel Skills",
+    "clawCharts": "ClawCharts",
+    "manual": "Manual"
+  },
+  "markdown": {
+    "title": "Estrellas de GitHub de Agentes",
+    "generatedOn": "> Generado el {{date}}; el recuento de estrellas se obtiene de la API de GitHub al generarse. Las etiquetas de origen muestran listas de descubrimiento.",
+    "sectionOpen": "Agentes Open Source",
+    "sectionClosed": "Agentes Closed Source",
+    "sectionUnknown": "Desconocido / Sin repositorio encontrado",
+    "tableOpen": ["#", "Agente", "Estrellas", "Forks", "Último push", "Repositorio GitHub", "Origen"],
+    "tableClosed": ["Agente", "Proveedor", "Origen"],
+    "tableUnknown": ["Agente", "Origen"]
+  }
+}

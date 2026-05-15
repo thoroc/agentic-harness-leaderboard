@@ -1,0 +1,17 @@
+{
+  "source": {
+    "vercelSkills": "Vercel Skills",
+    "clawCharts": "ClawCharts",
+    "manual": "Ręcznie"
+  },
+  "markdown": {
+    "title": "Gwiazdki GitHub agentów",
+    "generatedOn": "> Wygenerowano {{date}}; liczba gwiazdek pobierana jest z API GitHub w momencie generowania. Znaczniki źródła wskazują listy odkrywania.",
+    "sectionOpen": "Agenci Open Source",
+    "sectionClosed": "Agenci Closed Source",
+    "sectionUnknown": "Nieznane / Nie znaleziono repozytorium",
+    "tableOpen": ["#", "Agent", "Gwiazdki", "Forks", "Ostatni push", "Repozytorium GitHub", "Źródło"],
+    "tableClosed": ["Agent", "Dostawca", "Źródło"],
+    "tableUnknown": ["Agent", "Źródło"]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source": {
+    "vercelSkills": "Vercel Skills",
+    "clawCharts": "ClawCharts",
+    "manual": "手動"
+  },
+  "markdown": {
+    "title": "Agent GitHub スター数",
+    "generatedOn": "> {{date}} に生成。スター数は生成時に GitHub API から取得されます。ソースタグは発見リストを示します。",
+    "sectionOpen": "オープンソースエージェント",
+    "sectionClosed": "クローズドソースエージェント",
+    "sectionUnknown": "不明 / リポジトリが見つかりません",
+    "tableOpen": ["#", "エージェント", "スター", "フォーク", "最終プッシュ", "GitHub リポジトリ", "ソース"],
+    "tableClosed": ["エージェント", "ベンダー", "ソース"],
+    "tableUnknown": ["エージェント", "ソース"]
+  }
+}
