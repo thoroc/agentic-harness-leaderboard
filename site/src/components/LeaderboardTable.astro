@@ -1,12 +1,15 @@
 ---
 import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+import { t } from "../i18n";
 
 interface Props {
   payload: SitePayload;
   history: HistoryPayload;
+  translations: Record<string, string>;
+  lang: string;
 }
 
-const { payload, history } = Astro.props;
+const { payload, history, translations, lang } = Astro.props as Props;
 
 function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
   return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
@@ -26,11 +29,11 @@ function deltaFor(stars: number | null, id: string, days: number): number {
 const agents = payload.agents.slice().sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name));
 
 function shortDate(value: string | null): string {
-  return value ? String(value).slice(0, 10) : "N/A";
+  return value ? String(value).slice(0, 10) : t(translations, "notAvailable");
 }
 
 function kindLabel(kind: string): string {
-  return kind === "open" ? "Open Source" : kind === "closed" ? "Closed Source" : "Unknown";
+  return kind === "open" ? t(translations, "kindOpen") : kind === "closed" ? t(translations, "kindClosed") : t(translations, "kindUnknown");
 }
 
 function searchText(agent: (typeof agents)[number]): string {
@@ -41,31 +44,31 @@ function searchText(agent: (typeof agents)[number]): string {
 <section class="panel board-panel">
   <div class="panel-head board-head">
     <div>
-      <p class="eyebrow">Leaderboard</p>
-      <h2>Agent Leaderboard</h2>
+      <p class="eyebrow">{t(translations, "leaderboard")}</p>
+      <h2>{t(translations, "agentLeaderboard")}</h2>
     </div>
     <div class="toolbar">
       <div class="segmented" id="kind-tabs">
-        <button type="button" class="active" data-kind="all">All</button>
-        <button type="button" data-kind="open">Open Source</button>
-        <button type="button" data-kind="closed">Closed Source</button>
-        <button type="button" data-kind="unknown">Unknown</button>
+        <button type="button" class="active" data-kind="all">{t(translations, "filterAll")}</button>
+        <button type="button" data-kind="open">{t(translations, "filterOpen")}</button>
+        <button type="button" data-kind="closed">{t(translations, "filterClosed")}</button>
+        <button type="button" data-kind="unknown">{t(translations, "filterUnknown")}</button>
       </div>
-      <input id="search" type="search" placeholder="Search agent or repo" />
+      <input id="search" type="search" placeholder={t(translations, "searchPlaceholder")} />
     </div>
   </div>
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
-          <th>#</th>
-          <th>Agent</th>
-          <th>Kind</th>
-          <th>Stars</th>
-          <th>30D</th>
-          <th>Forks</th>
-          <th>Last Push</th>
-          <th>Source</th>
+          <th>{t(translations, "colRank")}</th>
+          <th>{t(translations, "colAgent")}</th>
+          <th>{t(translations, "colKind")}</th>
+          <th>{t(translations, "colStars")}</th>
+          <th>{t(translations, "col30D")}</th>
+          <th>{t(translations, "colForks")}</th>
+          <th>{t(translations, "colLastPush")}</th>
+          <th>{t(translations, "colSource")}</th>
         </tr>
       </thead>
       <tbody id="leaderboard">
@@ -74,12 +77,12 @@ function searchText(agent: (typeof agents)[number]): string {
             <td>{i + 1}</td>
             <td class="agent-cell">
               <a href={agent.url ?? "#"}><strong>{agent.name}</strong></a>
-              <span>{agent.repo ?? agent.vendor ?? "N/A"}</span>
+              <span>{agent.repo ?? agent.vendor ?? t(translations, "notAvailable")}</span>
             </td>
             <td><span class="badge">{kindLabel(agent.kind)}</span></td>
-            <td>{typeof agent.stars === "number" ? agent.stars.toLocaleString("en-US") : "N/A"}</td>
-            <td>{deltaFor(agent.stars, agent.id, 30).toLocaleString("en-US")}</td>
-            <td>{typeof agent.forks === "number" ? agent.forks.toLocaleString("en-US") : "N/A"}</td>
+            <td>{typeof agent.stars === "number" ? agent.stars.toLocaleString(lang) : t(translations, "notAvailable")}</td>
+            <td>{deltaFor(agent.stars, agent.id, 30).toLocaleString(lang)}</td>
+            <td>{typeof agent.forks === "number" ? agent.forks.toLocaleString(lang) : t(translations, "notAvailable")}</td>
             <td>{shortDate(agent.pushedAt)}</td>
             <td>{agent.sources?.join(", ") ?? ""}</td>
           </tr>

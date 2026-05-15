@@ -8,6 +8,20 @@ import GrowthList from "../components/GrowthList.astro";
 import LeaderboardTable from "../components/LeaderboardTable.astro";
 import type { SitePayload, HistoryPayload } from "../data/types";
 
+export function getStaticPaths() {
+  const locales = ["en", "zh", "fr", "de", "it", "es", "pt", "pl", "ru", "ko", "ja"];
+  return [
+    { params: { slug: undefined } },
+    ...locales.filter((l) => l !== "en").map((lang) => ({
+      params: { slug: lang },
+    })),
+  ];
+}
+
+const { slug } = Astro.params;
+const lang = typeof slug === "string" ? slug : "en";
+const SUPPORTED_LOCALES = ["en", "zh", "fr", "de", "it", "es", "pt", "pl", "ru", "ko", "ja"];
+
 let latest: SitePayload = {
   generatedAt: new Date().toISOString(),
   generatedDate: "",
@@ -15,7 +29,8 @@ let latest: SitePayload = {
   timezone: "UTC",
   totals: { agents: 0, repos: 0, stars: 0, forks: 0, openAgents: 0, closedAgents: 0, unknownAgents: 0 },
   agents: [],
-};
+  translations: {},
+} as SitePayload;
 let history: HistoryPayload = { updatedAt: "", snapshots: [] };
 
 try {
@@ -28,14 +43,16 @@ try {
     history = JSON.parse(readFileSync(historyPath, "utf-8"));
   }
 } catch {}
+
+const translations: Record<string, string> = latest.translations?.[lang] ?? latest.translations?.en ?? {};
 ---
 
-<BaseLayout generatedDateTime={latest.generatedDateTime} timezone={latest.timezone}>
-  <StatsGrid payload={latest} history={history} />
-  <TrendChart payload={latest} history={history} />
+<BaseLayout lang={lang} translations={translations}>
+  <StatsGrid payload={latest} history={history} translations={translations} lang={lang} />
+  <TrendChart payload={latest} history={history} translations={translations} lang={lang} />
   <div class="split">
-    <KindShare payload={latest} />
-    <GrowthList payload={latest} history={history} />
+    <KindShare payload={latest} translations={translations} lang={lang} />
+    <GrowthList payload={latest} history={history} translations={translations} lang={lang} />
   </div>
-  <LeaderboardTable payload={latest} history={history} />
+  <LeaderboardTable payload={latest} history={history} translations={translations} lang={lang} />
 </BaseLayout>

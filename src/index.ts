@@ -9,7 +9,6 @@ export {
   DEFAULT_JSON_OUTPUT,
   DEFAULT_OUTPUT,
   DEFAULT_SNAPSHOT_DIR,
-  DEFAULT_ZH_OUTPUT,
   HISTORY_LIMIT,
   SOURCE_INFO,
   SOURCE_URL,
@@ -22,7 +21,6 @@ export { shortDate } from "./format/short-date";
 export { fetchRepoStats } from "./github/fetch-repo-stats";
 export { i18next, initI18n } from "./i18n";
 export { main } from "./main";
-export { buildChineseMarkdown } from "./markdown/build-chinese-markdown";
 export { buildEnglishMarkdown } from "./markdown/build-english-markdown";
 export { buildMarkdown } from "./markdown/build-markdown";
 export { buildSitePayload } from "./site/build-site-payload";

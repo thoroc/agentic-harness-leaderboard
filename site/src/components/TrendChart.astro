@@ -1,12 +1,15 @@
 ---
 import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+import { t } from "../i18n";
 
 interface Props {
   payload: SitePayload;
   history: HistoryPayload;
+  translations: Record<string, string>;
+  lang: string;
 }
 
-const { payload, history } = Astro.props;
+const { payload, history, translations, lang } = Astro.props as Props;
 
 const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
 
@@ -14,7 +17,7 @@ function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
   return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
 }
 
-function renderTrendSvg(rangeDays: number): string {
+function renderTrendSvg(rangeDays: number, locale: string): string {
   const snapshots = (history?.snapshots ?? []).slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
   const topAgents = payload.agents.filter((a) => a.repo).sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name)).slice(0, 6);
   const latestTime = Date.parse(payload.generatedAt);
@@ -62,7 +65,7 @@ function renderTrendSvg(rangeDays: number): string {
   const grid = [0, 0.25, 0.5, 0.75, 1].map((t) => {
     const yy = pad + t * plotH;
     const value = Math.round(max - t * (max - min));
-    return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString("en-US")}</text>`;
+    return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString(locale)}</text>`;
   }).join("");
 
   const labels = visible.map((snap, i) => `<text class="chart-label" x="${x(i) - 18}" y="${height - 10}">${snap.date.slice(5)}</text>`).join("");
@@ -91,8 +94,8 @@ function escapeHtml(value: string): string {
 <section class="panel chart-panel" id="trend-container">
   <div class="panel-head">
     <div>
-      <p class="eyebrow">Trend</p>
-      <h2>Stars Trend</h2>
+      <p class="eyebrow">{t(translations, "trend")}</p>
+      <h2>{t(translations, "starsTrend")}</h2>
     </div>
     <div class="segmented" id="trend-range">
       <button type="button" class="active" data-days="30">30D</button>
@@ -100,10 +103,10 @@ function escapeHtml(value: string): string {
       <button type="button" data-days="365">1Y</button>
     </div>
   </div>
-  <div id="trend-chart" class="trend-chart" aria-label="stars trend chart" set:html={renderTrendSvg(30)} />
+  <div id="trend-chart" class="trend-chart" aria-label="stars trend chart" set:html={renderTrendSvg(30, lang)} />
 </section>
 
-<script define:vars={{ payload, history }}>
+<script define:vars={{ payload, history, lang }}>
   // @ts-nocheck
   const COLORS = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
 
@@ -156,7 +159,7 @@ function escapeHtml(value: string): string {
     const grid = [0, 0.25, 0.5, 0.75, 1].map((t) => {
       const yy = pad + t * plotH;
       const value = Math.round(max - t * (max - min));
-      return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString("en-US")}</text>`;
+      return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString(lang)}</text>`;
     }).join("");
 
     const labels = visible.map((snap, i) => `<text class="chart-label" x="${x(i) - 18}" y="${height - 10}">${snap.date.slice(5)}</text>`).join("");

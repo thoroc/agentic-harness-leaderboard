@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { CLAWCHARTS_URL, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_ZH_OUTPUT, HISTORY_LIMIT, SOURCE_INFO, SOURCE_URL } from ".";
+import { CLAWCHARTS_URL, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, HISTORY_LIMIT, SOURCE_INFO, SOURCE_URL } from ".";
 
 test("SOURCE_URL is defined", () => {
   expect(SOURCE_URL).toBeString();
@@ -21,10 +21,6 @@ test("Manual source has no URL", () => {
 
 test("DEFAULT_OUTPUT is a markdown file", () => {
   expect(DEFAULT_OUTPUT).toEndWith(".md");
-});
-
-test("DEFAULT_ZH_OUTPUT is a markdown file", () => {
-  expect(DEFAULT_ZH_OUTPUT).toEndWith(".md");
 });
 
 test("DEFAULT_JSON_OUTPUT is a JSON file", () => {

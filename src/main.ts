@@ -2,12 +2,11 @@ import { AGENTS } from "./agents";
 import { sourcesFor } from "./agents/sources-for";
 import { getFlagValue } from "./cli/get-flag-value";
 import { getOptionalFlag } from "./cli/get-optional-flag";
-import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants";
+import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR } from "./constants";
 import { nullableNumber } from "./format/nullable-number";
 import { shortDate } from "./format/short-date";
 import { fetchRepoStats } from "./github/fetch-repo-stats";
 import { initI18n } from "./i18n";
-import { buildChineseMarkdown } from "./markdown/build-chinese-markdown";
 import { buildEnglishMarkdown } from "./markdown/build-english-markdown";
 import { buildSitePayload } from "./site/build-site-payload";
 import { writeSiteData } from "./site/write-site-data";
@@ -21,8 +20,6 @@ export const main = async (): Promise<void> => {
   if (!token) console.log("Tip: set GITHUB_TOKEN to avoid rate limiting\n");
 
   const outputPath = getFlagValue("--output", DEFAULT_OUTPUT);
-  const explicitZhOutputPath = getFlagValue("--zh-output", DEFAULT_ZH_OUTPUT);
-  const zhOutputPath = explicitZhOutputPath ?? (outputPath ? DEFAULT_ZH_OUTPUT : null);
   const jsonOutputPath = getFlagValue("--json-output", DEFAULT_JSON_OUTPUT);
   const historyOutputPath = getFlagValue("--history-output", DEFAULT_HISTORY_OUTPUT);
   const snapshotDir = getOptionalFlag("--snapshot-dir") ?? DEFAULT_SNAPSHOT_DIR;
@@ -87,11 +84,6 @@ export const main = async (): Promise<void> => {
   if (outputPath) {
     await Bun.write(outputPath, buildEnglishMarkdown(open, closed, unknown));
     console.log(`\nMarkdown written to ${outputPath}`);
-  }
-
-  if (zhOutputPath) {
-    await Bun.write(zhOutputPath, buildChineseMarkdown(open, closed, unknown));
-    console.log(`Markdown written to ${zhOutputPath}`);
   }
 
   // ── JSON / site data (optional) ──────────────────────────────────

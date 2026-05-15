@@ -1,7 +1,19 @@
+import { i18next } from "../i18n";
 import type { OpenResult, ClosedEntry, UnknownEntry, SiteAgent, SitePayload } from "../types";
 import { projectId } from "./project-id";
 import { generatedDate } from "../format/generated-date";
 import { generatedDateTime } from "../format/generated-date-time";
+
+const SUPPORTED_LOCALES = ["en", "zh", "fr", "de", "it", "es", "pt", "pl", "ru", "ko", "ja"];
+
+const buildTranslations = (): Record<string, Record<string, string>> => {
+  const result: Record<string, Record<string, string>> = {};
+  for (const lang of SUPPORTED_LOCALES) {
+    const bundle = (i18next.getResourceBundle as (lng: string) => Record<string, unknown>)(lang);
+    result[lang] = (bundle?.site ?? {}) as Record<string, string>;
+  }
+  return result;
+};
 
 export const buildSitePayload = (open: OpenResult[], closed: ClosedEntry[], unknown: UnknownEntry[], now: Date): SitePayload => {
   const agents: SiteAgent[] = [
@@ -71,5 +83,6 @@ export const buildSitePayload = (open: OpenResult[], closed: ClosedEntry[], unkn
       unknownAgents: unknown.length,
     },
     agents,
+    translations: buildTranslations(),
   };
 };

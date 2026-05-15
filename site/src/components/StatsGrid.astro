@@ -1,12 +1,15 @@
 ---
 import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+import { t } from "../i18n";
 
 interface Props {
   payload: SitePayload;
   history: HistoryPayload;
+  translations: Record<string, string>;
+  lang: string;
 }
 
-const { payload, history } = Astro.props;
+const { payload, history, translations, lang } = Astro.props as Props;
 
 function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
   return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
@@ -30,23 +33,23 @@ const thirtyDayGrowth = payload.agents.reduce((s, a) => s + Math.max(0, deltaFor
 
 <section class="stats-grid">
   <article class="stat">
-    <div class="stat-label">Total Stars</div>
-    <div class="stat-value">{payload.totals.stars.toLocaleString("en-US")}</div>
-    <div class="stat-foot">{payload.totals.repos} repos tracked</div>
+    <div class="stat-label">{t(translations, "totalStars")}</div>
+    <div class="stat-value">{payload.totals.stars.toLocaleString(lang)}</div>
+    <div class="stat-foot">{payload.totals.repos} {t(translations, "reposTracked")}</div>
   </article>
   <article class="stat">
-    <div class="stat-label">Open Source Stars</div>
-    <div class="stat-value">{openStars.toLocaleString("en-US")}</div>
-    <div class="stat-foot">{payload.totals.openAgents} open source agents</div>
+    <div class="stat-label">{t(translations, "openSourceStars")}</div>
+    <div class="stat-value">{openStars.toLocaleString(lang)}</div>
+    <div class="stat-foot">{payload.totals.openAgents} {t(translations, "openSourceAgents")}</div>
   </article>
   <article class="stat">
-    <div class="stat-label">30D Growth</div>
-    <div class="stat-value">+{thirtyDayGrowth.toLocaleString("en-US")}</div>
-    <div class="stat-foot">based on daily snapshots</div>
+    <div class="stat-label">{t(translations, "thirtyDayGrowth")}</div>
+    <div class="stat-value">+{thirtyDayGrowth.toLocaleString(lang)}</div>
+    <div class="stat-foot">{t(translations, "basedOnSnapshots")}</div>
   </article>
   <article class="stat">
-    <div class="stat-label">Current Leader</div>
-    <div class="stat-value">{top?.name ?? "N/A"}</div>
-    <div class="stat-foot">{top ? `${top.stars?.toLocaleString("en-US")} stars` : "N/A"}</div>
+    <div class="stat-label">{t(translations, "currentLeader")}</div>
+    <div class="stat-value">{top?.name ?? t(translations, "notAvailable")}</div>
+    <div class="stat-foot">{top ? `${top.stars?.toLocaleString(lang)} ${t(translations, "stars")}` : t(translations, "notAvailable")}</div>
   </article>
 </section>
