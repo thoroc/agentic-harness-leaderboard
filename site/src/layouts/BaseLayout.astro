@@ -1,32 +1,72 @@
 ---
 import "../styles/global.css";
-const { generatedDateTime, timezone } = Astro.props;
+import { t, LOCALE_LABELS } from "../i18n";
+
+const SUPPORTED_LOCALES = ["en", "zh", "fr", "de", "it", "es", "pt", "pl", "ru", "ko", "ja"];
+
+interface Props {
+  lang: string;
+  translations: Record<string, string>;
+}
+
+const { lang, translations } = Astro.props as Props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Agent GitHub Stars</title>
-    <meta name="description" content="GitHub star counts, forks, and trends for coding AI agents." />
+    <title>{t(translations, "title")}</title>
+    <meta name="description" content={t(translations, "description")} />
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">Coding AI Agents</p>
-        <h1>Agent Stars</h1>
+        <p class="eyebrow">{t(translations, "eyebrow")}</p>
+        <h1>{t(translations, "brand")}</h1>
       </div>
       <nav class="links" aria-label="external links">
-        <a href="https://github.com/pantheon-org/agentic-harness-leaderboard">GitHub</a>
+        <select id="lang-switcher" class="lang-picker" aria-label="Language">
+          {SUPPORTED_LOCALES.map((code) => (
+            <option value={code} selected={code === lang}>{LOCALE_LABELS[code] ?? code}</option>
+          ))}
+        </select>
+        <a href="https://github.com/pantheon-org/agentic-harness-leaderboard">{t(translations, "github")}</a>
       </nav>
     </header>
     <main>
       <slot />
     </main>
     <footer>
-      <span>{generatedDateTime} {timezone}</span>
-      <span>Star counts from GitHub API. Source tags show discovery lists.</span>
+      <span>{t(translations, "footerNote")}</span>
     </footer>
+    <script>
+      // @ts-nocheck
+      const BASE = (import.meta.env.BASE_URL ?? "").replace(/\/+$/, "");
+      const switcher = document.getElementById("lang-switcher");
+      if (switcher) {
+        switcher.addEventListener("change", () => {
+          const code = (/** @type {HTMLSelectElement} */ (switcher)).value;
+          location.href = BASE + (code === "en" ? "/" : "/" + code + "/");
+        });
+      }
+    </script>
   </body>
 </html>
+
+<style>
+  .lang-picker {
+    min-height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  .lang-picker:hover { border-color: #a8b5aa; }
+</style>

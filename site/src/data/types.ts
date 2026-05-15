@@ -29,6 +29,7 @@ export interface SitePayload {
     unknownAgents: number;
   };
   agents: SiteAgent[];
+  translations: Record<string, Record<string, string>>;
 }
 
 export interface HistorySnapshotAgent {

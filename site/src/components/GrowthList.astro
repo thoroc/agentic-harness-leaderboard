@@ -1,12 +1,15 @@
 ---
 import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+import { t } from "../i18n";
 
 interface Props {
   payload: SitePayload;
   history: HistoryPayload;
+  translations: Record<string, string>;
+  lang: string;
 }
 
-const { payload, history } = Astro.props;
+const { payload, history, translations, lang } = Astro.props as Props;
 
 const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
 
@@ -37,8 +40,8 @@ const maxDelta = Math.max(1, ...rows.map((r) => Math.max(0, r.delta)));
 <section class="panel">
   <div class="panel-head compact">
     <div>
-      <p class="eyebrow">Growth</p>
-      <h2>30-Day Growth</h2>
+      <p class="eyebrow">{t(translations, "growth")}</p>
+      <h2>{t(translations, "thirtyDayGrowthHeading")}</h2>
     </div>
   </div>
   <div class="growth-list">
@@ -46,7 +49,7 @@ const maxDelta = Math.max(1, ...rows.map((r) => Math.max(0, r.delta)));
       <div class="growth-row">
         <a class="growth-name" href={agent.url ?? "#"}>{agent.name}</a>
         <div class="bar"><span style={`width:${Math.max(2, (Math.max(0, delta) / maxDelta) * 100)}%;background:${colors[index % colors.length]}`}></span></div>
-        <div class="growth-delta">+{delta.toLocaleString("en-US")}</div>
+        <div class="growth-delta">+{delta.toLocaleString(lang)}</div>
       </div>
     ))}
   </div>

@@ -68,6 +68,7 @@ export const SitePayloadSchema = z.object({
     unknownAgents: z.number(),
   }),
   agents: SiteAgentSchema.array(),
+  translations: z.record(z.string(), z.record(z.string(), z.string())),
 });
 export type SitePayload = z.infer<typeof SitePayloadSchema>;
 

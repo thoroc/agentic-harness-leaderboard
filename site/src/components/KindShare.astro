@@ -1,17 +1,20 @@
 ---
 import type { SitePayload } from "../data/types";
+import { t } from "../i18n";
 
 interface Props {
   payload: SitePayload;
+  translations: Record<string, string>;
+  lang: string;
 }
 
-const { payload } = Astro.props;
+const { payload, translations, lang } = Astro.props as Props;
 
 const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
 
 const totals: Record<string, number> = {};
 for (const agent of payload.agents) {
-  const key = agent.kind === "open" ? "Open Source" : agent.kind === "closed" ? "Closed Source" : "Unknown";
+  const key = agent.kind === "open" ? t(translations, "kindOpen") : agent.kind === "closed" ? t(translations, "kindClosed") : t(translations, "kindUnknown");
   totals[key] = (totals[key] ?? 0) + (agent.stars ?? 0);
 }
 
@@ -22,8 +25,8 @@ const max = Math.max(1, ...rows.map(([, stars]) => stars));
 <section class="panel">
   <div class="panel-head compact">
     <div>
-      <p class="eyebrow">Share</p>
-      <h2>Kind Share</h2>
+      <p class="eyebrow">{t(translations, "share")}</p>
+      <h2>{t(translations, "kindShare")}</h2>
     </div>
   </div>
   <div class="kind-share">
@@ -31,7 +34,7 @@ const max = Math.max(1, ...rows.map(([, stars]) => stars));
       <div class="kind-row">
         <div class="kind-name">{name}</div>
         <div class="bar"><span style={`width:${Math.max(2, (stars / max) * 100)}%;background:${colors[index % colors.length]}`}></span></div>
-        <div class="kind-value">{stars.toLocaleString("en-US")}</div>
+        <div class="kind-value">{stars.toLocaleString(lang)}</div>
       </div>
     ))}
   </div>
