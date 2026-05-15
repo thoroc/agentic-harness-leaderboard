@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import type { AgentEntry } from "./index";
+import type { AgentEntry } from ".";
 import { sourcesFor } from "./sources-for";
 
 test("sourcesFor returns sources when present", () => {

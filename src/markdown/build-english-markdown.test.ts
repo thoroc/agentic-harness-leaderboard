@@ -1,6 +1,6 @@
 import { beforeAll, beforeEach, expect, test } from "bun:test";
-import { initI18n } from "../i18n/index";
-import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index";
+import { initI18n } from "../i18n";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "../types";
 import { buildEnglishMarkdown } from "./build-english-markdown";
 
 beforeAll(async () => {

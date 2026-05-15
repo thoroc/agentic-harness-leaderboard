@@ -1,4 +1,4 @@
-import type { OpenResult, ClosedEntry, UnknownEntry, SiteAgent, SitePayload } from "../types/index";
+import type { OpenResult, ClosedEntry, UnknownEntry, SiteAgent, SitePayload } from "../types";
 import { projectId } from "./project-id";
 import { generatedDate } from "../format/generated-date";
 import { generatedDateTime } from "../format/generated-date-time";

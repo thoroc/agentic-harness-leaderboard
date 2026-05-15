@@ -1,10 +1,10 @@
 import { generatedDate } from "../format/generated-date";
 import { nullableNumber } from "../format/nullable-number";
 import { shortDate } from "../format/short-date";
-import { i18next } from "../i18n/index";
+import { i18next } from "../i18n";
 import { formatSources } from "../source/format-sources";
 import { mdTable } from "../table/md-table";
-import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "../types";
 
 export const buildMarkdown = (open: OpenResult[], closed: ClosedEntry[], unknown: UnknownEntry[], language: string): string => {
   const t = i18next.getFixedT(language);

@@ -3,7 +3,7 @@ import { writeSiteData } from "./write-site-data";
 import { readFileSync, existsSync, mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
-import type { SitePayload } from "../types/index";
+import type { SitePayload } from "../types";
 
 const payload: SitePayload = {
   generatedAt: "2024-03-15T12:00:00.000Z",

@@ -1,5 +1,5 @@
-export type { AgentEntry, AgentSource } from "./agents/index";
-export { AGENTS } from "./agents/index";
+export type { AgentEntry, AgentSource } from "./agents";
+export { AGENTS } from "./agents";
 export { sourcesFor } from "./agents/sources-for";
 export { getFlagValue } from "./cli/get-flag-value";
 export { getOptionalFlag } from "./cli/get-optional-flag";
@@ -13,14 +13,14 @@ export {
   HISTORY_LIMIT,
   SOURCE_INFO,
   SOURCE_URL,
-} from "./constants/index";
+} from "./constants";
 export { escapeMarkdownCell } from "./format/escape-markdown-cell";
 export { generatedDate } from "./format/generated-date";
 export { generatedDateTime } from "./format/generated-date-time";
 export { nullableNumber } from "./format/nullable-number";
 export { shortDate } from "./format/short-date";
 export { fetchRepoStats } from "./github/fetch-repo-stats";
-export { i18next, initI18n } from "./i18n/index";
+export { i18next, initI18n } from "./i18n";
 export { main } from "./main";
 export { buildChineseMarkdown } from "./markdown/build-chinese-markdown";
 export { buildEnglishMarkdown } from "./markdown/build-english-markdown";
@@ -44,4 +44,4 @@ export type {
   SiteAgent,
   SitePayload,
   UnknownEntry,
-} from "./types/index";
+} from "./types";

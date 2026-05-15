@@ -1,6 +1,6 @@
 import { test, expect } from "bun:test";
 import { buildSnapshot } from "./build-snapshot";
-import type { SitePayload } from "../types/index";
+import type { SitePayload } from "../types";
 
 const openAgent = {
   id: "test-agent", name: "Test Agent", kind: "open" as const, repo: "test/repo",

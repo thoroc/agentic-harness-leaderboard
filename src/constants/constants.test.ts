@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { CLAWCHARTS_URL, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_ZH_OUTPUT, HISTORY_LIMIT, SOURCE_INFO, SOURCE_URL } from "./index";
+import { CLAWCHARTS_URL, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_ZH_OUTPUT, HISTORY_LIMIT, SOURCE_INFO, SOURCE_URL } from ".";
 
 test("SOURCE_URL is defined", () => {
   expect(SOURCE_URL).toBeString();

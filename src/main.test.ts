@@ -13,7 +13,7 @@ beforeEach(() => {
 });
 
 test("main handles empty argvs (no output flags)", async () => {
-  mock.module("./agents/index", () => ({
+  mock.module("./agents", () => ({
     AGENTS: {
       OpenAgent: { kind: "open", repo: "test/repo" },
       ClosedAgent: { kind: "closed", vendor: "TestVendor" },
@@ -52,7 +52,7 @@ test("main handles empty argvs (no output flags)", async () => {
 });
 
 test("main reclassifies failed fetch as unknown", async () => {
-  mock.module("./agents/index", () => ({
+  mock.module("./agents", () => ({
     AGENTS: {
       MissingAgent: { kind: "open", repo: "missing/repo" },
     },
@@ -75,7 +75,7 @@ test("main reclassifies failed fetch as unknown", async () => {
 });
 
 test("main writes output files when flags provided", async () => {
-  mock.module("./agents/index", () => ({
+  mock.module("./agents", () => ({
     AGENTS: {
       TestAgent: { kind: "open", repo: "test/repo" },
     },

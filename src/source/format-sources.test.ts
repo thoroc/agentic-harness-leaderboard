@@ -1,5 +1,5 @@
 import { beforeAll, expect, test } from "bun:test";
-import { initI18n } from "../i18n/index";
+import { initI18n } from "../i18n";
 import { formatSources } from "./format-sources";
 
 beforeAll(async () => {

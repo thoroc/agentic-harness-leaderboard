@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { main } from "./src/index";
+import { main } from "./src";
 
 main().catch((err: unknown) => {
   console.error(err);

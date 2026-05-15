@@ -1,6 +1,6 @@
-import type { AgentSource } from "../agents/index";
-import { SOURCE_INFO } from "../constants/index";
-import { i18next } from "../i18n/index";
+import type { AgentSource } from "../agents";
+import { SOURCE_INFO } from "../constants";
+import { i18next } from "../i18n";
 
 export const formatSources = (sources: AgentSource[], language: string): string => {
   const t = i18next.getFixedT(language);

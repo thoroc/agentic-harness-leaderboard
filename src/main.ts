@@ -1,19 +1,19 @@
-import { AGENTS } from "./agents/index";
+import { AGENTS } from "./agents";
 import { sourcesFor } from "./agents/sources-for";
 import { getFlagValue } from "./cli/get-flag-value";
 import { getOptionalFlag } from "./cli/get-optional-flag";
-import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants/index";
+import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants";
 import { nullableNumber } from "./format/nullable-number";
 import { shortDate } from "./format/short-date";
 import { fetchRepoStats } from "./github/fetch-repo-stats";
-import { initI18n } from "./i18n/index";
+import { initI18n } from "./i18n";
 import { buildChineseMarkdown } from "./markdown/build-chinese-markdown";
 import { buildEnglishMarkdown } from "./markdown/build-english-markdown";
 import { buildSitePayload } from "./site/build-site-payload";
 import { writeSiteData } from "./site/write-site-data";
 import { formatConsoleSources } from "./source/format-console-sources";
 import { consoleTable } from "./table/console-table";
-import type { ClosedEntry, OpenResult, UnknownEntry } from "./types/index";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "./types";
 
 export const main = async (): Promise<void> => {
   await initI18n(process.env.LOCALE || "en");

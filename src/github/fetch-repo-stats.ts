@@ -1,4 +1,4 @@
-import type { RepoStats } from "../types/index";
+import type { RepoStats } from "../types";
 
 export const fetchRepoStats = async (repo: string, token?: string): Promise<RepoStats> => {
   const headers: Record<string, string> = {

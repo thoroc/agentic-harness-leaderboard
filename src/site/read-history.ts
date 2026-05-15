@@ -1,5 +1,5 @@
-import { HistoryPayloadSchema } from "../types/index";
-import type { HistoryPayload } from "../types/index";
+import { HistoryPayloadSchema } from "../types";
+import type { HistoryPayload } from "../types";
 
 export const readHistory = async (path: string): Promise<HistoryPayload> => {
   try {

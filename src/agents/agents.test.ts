@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { AGENTS } from "./index";
+import { AGENTS } from ".";
 
 test("AGENTS is a non-empty record", () => {
   const entries = Object.entries(AGENTS);
