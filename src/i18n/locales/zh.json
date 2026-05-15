@@ -1,0 +1,17 @@
+{
+  "source": {
+    "vercelSkills": "Vercel Skills",
+    "clawCharts": "ClawCharts",
+    "manual": "手工维护"
+  },
+  "markdown": {
+    "title": "Agent GitHub 星标排行",
+    "generatedOn": "> 生成日期：{{date}}；生成时星标数从 GitHub API 获取；来源标签表示候选项目发现列表。",
+    "sectionOpen": "开源 Agent",
+    "sectionClosed": "闭源 Agent",
+    "sectionUnknown": "未知 / 未找到仓库",
+    "tableOpen": ["排名", "Agent", "星标数", "Forks", "最后推送", "GitHub 仓库", "来源"],
+    "tableClosed": ["Agent", "厂商", "来源"],
+    "tableUnknown": ["Agent", "来源"]
+  }
+}

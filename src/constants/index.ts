@@ -3,10 +3,10 @@ import type { AgentSource } from "../agents/index.ts";
 export const SOURCE_URL = "https://github.com/vercel-labs/skills?tab=readme-ov-file#supported-agents";
 export const CLAWCHARTS_URL = "https://clawcharts.com/";
 
-export const SOURCE_INFO: Record<AgentSource, { label: string; zhLabel: string; url?: string }> = {
-  "Vercel Skills": { label: "Vercel Skills", zhLabel: "Vercel Skills", url: SOURCE_URL },
-  ClawCharts: { label: "ClawCharts", zhLabel: "ClawCharts", url: CLAWCHARTS_URL },
-  Manual: { label: "Manual", zhLabel: "手工维护" },
+export const SOURCE_INFO: Record<AgentSource, { translationKey: string; url?: string }> = {
+  "Vercel Skills": { translationKey: "source.vercelSkills", url: SOURCE_URL },
+  ClawCharts: { translationKey: "source.clawCharts", url: CLAWCHARTS_URL },
+  Manual: { translationKey: "source.manual" },
 };
 
 export const DEFAULT_OUTPUT = "agent-stars.md";

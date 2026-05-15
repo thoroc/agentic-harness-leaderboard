@@ -1,0 +1,17 @@
+{
+  "source": {
+    "vercelSkills": "Vercel Skills",
+    "clawCharts": "ClawCharts",
+    "manual": "Manual"
+  },
+  "markdown": {
+    "title": "Agent GitHub Stars",
+    "generatedOn": "> Generated on {{date}}; star counts are fetched from GitHub API when generated. Source tags show discovery lists.",
+    "sectionOpen": "Open Source Agents",
+    "sectionClosed": "Closed Source Agents",
+    "sectionUnknown": "Unknown / No Repo Found",
+    "tableOpen": ["#", "Agent", "Stars", "Forks", "Last Push", "GitHub Repo", "Source"],
+    "tableClosed": ["Agent", "Vendor", "Source"],
+    "tableUnknown": ["Agent", "Source"]
+  }
+}

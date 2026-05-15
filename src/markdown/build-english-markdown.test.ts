@@ -1,6 +1,11 @@
-import { beforeEach, expect, test } from "bun:test";
+import { beforeAll, beforeEach, expect, test } from "bun:test";
+import { initI18n } from "../i18n/index.ts";
 import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index.ts";
 import { buildEnglishMarkdown } from "./build-english-markdown.ts";
+
+beforeAll(async () => {
+  await initI18n("en");
+});
 
 beforeEach(() => {
   process.env.TZ = "UTC";

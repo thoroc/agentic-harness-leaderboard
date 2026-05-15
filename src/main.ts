@@ -6,6 +6,7 @@ import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SN
 import { nullableNumber } from "./format/nullable-number.ts";
 import { shortDate } from "./format/short-date.ts";
 import { fetchRepoStats } from "./github/fetch-repo-stats.ts";
+import { initI18n } from "./i18n/index.ts";
 import { buildChineseMarkdown } from "./markdown/build-chinese-markdown.ts";
 import { buildEnglishMarkdown } from "./markdown/build-english-markdown.ts";
 import { buildSitePayload } from "./site/build-site-payload.ts";
@@ -15,6 +16,7 @@ import { consoleTable } from "./table/console-table.ts";
 import type { ClosedEntry, OpenResult, UnknownEntry } from "./types/index.ts";
 
 export const main = async (): Promise<void> => {
+  await initI18n(process.env.LOCALE || "en");
   const token = process.env.GITHUB_TOKEN;
   if (!token) console.log("Tip: set GITHUB_TOKEN to avoid rate limiting\n");
 

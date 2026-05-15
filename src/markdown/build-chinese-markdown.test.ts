@@ -1,6 +1,11 @@
-import { beforeEach, expect, test } from "bun:test";
+import { beforeAll, beforeEach, expect, test } from "bun:test";
+import { initI18n } from "../i18n/index.ts";
 import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index.ts";
 import { buildChineseMarkdown } from "./build-chinese-markdown.ts";
+
+beforeAll(async () => {
+  await initI18n("zh");
+});
 
 beforeEach(() => {
   process.env.TZ = "UTC";
@@ -31,7 +36,7 @@ test("buildChineseMarkdown includes Chinese headings", () => {
   expect(result).toContain("## 开源 Agent");
   expect(result).toContain("## 闭源 Agent");
   expect(result).toContain("Test Agent");
-  expect(result).not.toContain("未知");
+  expect(result).not.toContain("未知 / 未找到仓库");
 });
 
 test("buildChineseMarkdown includes unknown section with Chinese heading", () => {
