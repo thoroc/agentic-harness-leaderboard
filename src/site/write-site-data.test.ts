@@ -1,9 +1,9 @@
 import { test, expect } from "bun:test";
-import { writeSiteData } from "./write-site-data.ts";
+import { writeSiteData } from "./write-site-data";
 import { readFileSync, existsSync, mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
-import type { SitePayload } from "../types/index.ts";
+import type { SitePayload } from "../types/index";
 
 const payload: SitePayload = {
   generatedAt: "2024-03-15T12:00:00.000Z",

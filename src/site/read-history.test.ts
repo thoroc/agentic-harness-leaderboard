@@ -1,5 +1,5 @@
 import { test, expect } from "bun:test";
-import { readHistory } from "./read-history.ts";
+import { readHistory } from "./read-history";
 import { mkdtempSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";

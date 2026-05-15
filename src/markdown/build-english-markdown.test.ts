@@ -1,7 +1,7 @@
 import { beforeAll, beforeEach, expect, test } from "bun:test";
-import { initI18n } from "../i18n/index.ts";
-import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index.ts";
-import { buildEnglishMarkdown } from "./build-english-markdown.ts";
+import { initI18n } from "../i18n/index";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index";
+import { buildEnglishMarkdown } from "./build-english-markdown";
 
 beforeAll(async () => {
   await initI18n("en");

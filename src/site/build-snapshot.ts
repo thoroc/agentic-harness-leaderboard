@@ -1,4 +1,4 @@
-import type { SitePayload, HistorySnapshot } from "../types/index.ts";
+import type { SitePayload, HistorySnapshot } from "../types/index";
 
 export const buildSnapshot = (payload: SitePayload): HistorySnapshot => {
   return {

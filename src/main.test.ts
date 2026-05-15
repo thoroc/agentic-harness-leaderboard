@@ -13,7 +13,7 @@ beforeEach(() => {
 });
 
 test("main handles empty argvs (no output flags)", async () => {
-  mock.module("./agents/index.ts", () => ({
+  mock.module("./agents/index", () => ({
     AGENTS: {
       OpenAgent: { kind: "open", repo: "test/repo" },
       ClosedAgent: { kind: "closed", vendor: "TestVendor" },
@@ -35,7 +35,7 @@ test("main handles empty argvs (no output flags)", async () => {
       { status: 200 },
     ) as Response;
 
-  process.argv = ["bun", "main.ts"];
+  process.argv = ["bun", "main"];
   process.env.GITHUB_TOKEN = "test-token";
 
   const logs: string[] = [];
@@ -43,7 +43,7 @@ test("main handles empty argvs (no output flags)", async () => {
     logs.push(args.join(" "));
   };
 
-  const { main } = await import("./main.ts");
+  const { main } = await import("./main");
   await main();
 
   expect(logs.some((l) => l.includes("OpenAgent"))).toBe(true);
@@ -52,7 +52,7 @@ test("main handles empty argvs (no output flags)", async () => {
 });
 
 test("main reclassifies failed fetch as unknown", async () => {
-  mock.module("./agents/index.ts", () => ({
+  mock.module("./agents/index", () => ({
     AGENTS: {
       MissingAgent: { kind: "open", repo: "missing/repo" },
     },
@@ -60,14 +60,14 @@ test("main reclassifies failed fetch as unknown", async () => {
 
   globalThis.fetch = async () => new Response("Not Found", { status: 404 }) as Response;
 
-  process.argv = ["bun", "main.ts"];
+  process.argv = ["bun", "main"];
 
   const logs: string[] = [];
   console.log = (...args: string[]) => {
     logs.push(args.join(" "));
   };
 
-  const { main } = await import("./main.ts");
+  const { main } = await import("./main");
   await main();
 
   expect(logs.some((l) => l.includes("No Repo Found"))).toBe(true);
@@ -75,7 +75,7 @@ test("main reclassifies failed fetch as unknown", async () => {
 });
 
 test("main writes output files when flags provided", async () => {
-  mock.module("./agents/index.ts", () => ({
+  mock.module("./agents/index", () => ({
     AGENTS: {
       TestAgent: { kind: "open", repo: "test/repo" },
     },
@@ -97,7 +97,7 @@ test("main writes output files when flags provided", async () => {
 
   process.argv = [
     "bun",
-    "main.ts",
+    "main",
     "--output",
     "/tmp/test-agent-stars.md",
     "--zh-output",
@@ -116,7 +116,7 @@ test("main writes output files when flags provided", async () => {
     logs.push(args.join(" "));
   };
 
-  const { main } = await import("./main.ts");
+  const { main } = await import("./main");
   await main();
 
   expect(logs.some((l) => l.includes("Markdown written"))).toBe(true);

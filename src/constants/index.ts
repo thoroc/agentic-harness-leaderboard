@@ -1,4 +1,4 @@
-import type { AgentSource } from "../agents/index.ts";
+import type { AgentSource } from "../agents/index";
 
 export const SOURCE_URL = "https://github.com/vercel-labs/skills?tab=readme-ov-file#supported-agents";
 export const CLAWCHARTS_URL = "https://clawcharts.com/";

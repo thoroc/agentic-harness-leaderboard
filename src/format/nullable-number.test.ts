@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { nullableNumber } from "./nullable-number.ts";
+import { nullableNumber } from "./nullable-number";
 
 test("nullableNumber formats zero", () => {
   expect(nullableNumber(0)).toBe("0");

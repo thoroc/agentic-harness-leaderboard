@@ -1,5 +1,5 @@
 import { test, expect } from "bun:test";
-import { writeJson } from "./write-json.ts";
+import { writeJson } from "./write-json";
 import { readFileSync, existsSync, mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";

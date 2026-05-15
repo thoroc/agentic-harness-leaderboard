@@ -1,9 +1,9 @@
 import { join } from "node:path";
-import type { SitePayload, HistoryPayload } from "../types/index.ts";
-import { buildSnapshot } from "./build-snapshot.ts";
-import { readHistory } from "./read-history.ts";
-import { writeJson } from "./write-json.ts";
-import { HISTORY_LIMIT } from "../constants/index.ts";
+import type { SitePayload, HistoryPayload } from "../types/index";
+import { buildSnapshot } from "./build-snapshot";
+import { readHistory } from "./read-history";
+import { writeJson } from "./write-json";
+import { HISTORY_LIMIT } from "../constants/index";
 
 export const writeSiteData = async (payload: SitePayload, latestPath: string, historyPath: string, snapshotDir: string): Promise<void> => {
   const snapshot = buildSnapshot(payload);

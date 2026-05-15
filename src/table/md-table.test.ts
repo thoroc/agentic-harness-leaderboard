@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { mdTable } from "./md-table.ts";
+import { mdTable } from "./md-table";
 
 test("mdTable generates table with headers and rows", () => {
   const result = mdTable(

@@ -1,4 +1,4 @@
-import type { HistoryPayload, HistorySnapshot } from "../types/index.ts";
+import type { HistoryPayload, HistorySnapshot } from "../types/index";
 
 export const readHistory = async (path: string): Promise<HistoryPayload> => {
   try {

@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { consoleTable } from "./console-table.ts";
+import { consoleTable } from "./console-table";
 
 test("consoleTable logs formatted table", () => {
   const logs: string[] = [];

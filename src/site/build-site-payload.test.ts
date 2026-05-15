@@ -1,6 +1,6 @@
 import { test, expect, beforeEach } from "bun:test";
-import { buildSitePayload } from "./build-site-payload.ts";
-import type { OpenResult, ClosedEntry, UnknownEntry } from "../types/index.ts";
+import { buildSitePayload } from "./build-site-payload";
+import type { OpenResult, ClosedEntry, UnknownEntry } from "../types/index";
 
 beforeEach(() => {
   process.env.TZ = "UTC";

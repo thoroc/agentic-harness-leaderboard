@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { shortDate } from "./short-date.ts";
+import { shortDate } from "./short-date";
 
 test("shortDate formats ISO string", () => {
   expect(shortDate("2024-03-15T12:00:00Z")).toBe("2024-03-15");

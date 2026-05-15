@@ -1,7 +1,7 @@
-import type { OpenResult, ClosedEntry, UnknownEntry, SiteAgent, SitePayload } from "../types/index.ts";
-import { projectId } from "./project-id.ts";
-import { generatedDate } from "../format/generated-date.ts";
-import { generatedDateTime } from "../format/generated-date-time.ts";
+import type { OpenResult, ClosedEntry, UnknownEntry, SiteAgent, SitePayload } from "../types/index";
+import { projectId } from "./project-id";
+import { generatedDate } from "../format/generated-date";
+import { generatedDateTime } from "../format/generated-date-time";
 
 export const buildSitePayload = (open: OpenResult[], closed: ClosedEntry[], unknown: UnknownEntry[], now: Date): SitePayload => {
   const agents: SiteAgent[] = [

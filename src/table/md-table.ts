@@ -1,4 +1,4 @@
-import { escapeMarkdownCell } from "../format/escape-markdown-cell.ts";
+import { escapeMarkdownCell } from "../format/escape-markdown-cell";
 
 export const mdTable = (headers: string[], rows: string[][]): string => {
   const header = `| ${headers.map(escapeMarkdownCell).join(" | ")} |`;

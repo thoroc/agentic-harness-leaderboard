@@ -1,5 +1,5 @@
 import { beforeEach, expect, test } from "bun:test";
-import { fetchRepoStats } from "./fetch-repo-stats.ts";
+import { fetchRepoStats } from "./fetch-repo-stats";
 
 const originalFetch = globalThis.fetch;
 

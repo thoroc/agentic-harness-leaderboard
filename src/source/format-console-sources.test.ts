@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { formatConsoleSources } from "./format-console-sources.ts";
+import { formatConsoleSources } from "./format-console-sources";
 
 test("formatConsoleSources joins multiple sources", () => {
   expect(formatConsoleSources(["Vercel Skills", "ClawCharts"])).toBe("Vercel Skills, ClawCharts");

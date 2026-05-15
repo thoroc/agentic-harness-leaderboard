@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { i18next, initI18n } from "./index.ts";
+import { i18next, initI18n } from "./index";
 
 test("initI18n sets the language", async () => {
   await initI18n("en");

@@ -1,5 +1,5 @@
 import { beforeEach, expect, test } from "bun:test";
-import { generatedDate } from "./generated-date.ts";
+import { generatedDate } from "./generated-date";
 
 const originalTz = process.env.TZ;
 

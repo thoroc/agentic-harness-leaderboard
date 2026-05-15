@@ -1,4 +1,4 @@
-import type { AgentSource } from "../agents/index.ts";
+import type { AgentSource } from "../agents/index";
 
 export interface RepoStats {
   stars: number | null;

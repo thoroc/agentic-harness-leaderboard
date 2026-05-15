@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
-import type { AgentEntry } from "./index.ts";
-import { sourcesFor } from "./sources-for.ts";
+import type { AgentEntry } from "./index";
+import { sourcesFor } from "./sources-for";
 
 test("sourcesFor returns sources when present", () => {
   const entry = { kind: "open" as const, repo: "test/repo", sources: ["ClawCharts" as const] };

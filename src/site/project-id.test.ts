@@ -1,5 +1,5 @@
 import { test, expect } from "bun:test";
-import { projectId } from "./project-id.ts";
+import { projectId } from "./project-id";
 
 test("projectId lowercases name", () => {
   expect(projectId("My Agent")).toBe("my-agent");

@@ -1,19 +1,19 @@
-import { AGENTS } from "./agents/index.ts";
-import { sourcesFor } from "./agents/sources-for.ts";
-import { getFlagValue } from "./cli/get-flag-value.ts";
-import { getOptionalFlag } from "./cli/get-optional-flag.ts";
-import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants/index.ts";
-import { nullableNumber } from "./format/nullable-number.ts";
-import { shortDate } from "./format/short-date.ts";
-import { fetchRepoStats } from "./github/fetch-repo-stats.ts";
-import { initI18n } from "./i18n/index.ts";
-import { buildChineseMarkdown } from "./markdown/build-chinese-markdown.ts";
-import { buildEnglishMarkdown } from "./markdown/build-english-markdown.ts";
-import { buildSitePayload } from "./site/build-site-payload.ts";
-import { writeSiteData } from "./site/write-site-data.ts";
-import { formatConsoleSources } from "./source/format-console-sources.ts";
-import { consoleTable } from "./table/console-table.ts";
-import type { ClosedEntry, OpenResult, UnknownEntry } from "./types/index.ts";
+import { AGENTS } from "./agents/index";
+import { sourcesFor } from "./agents/sources-for";
+import { getFlagValue } from "./cli/get-flag-value";
+import { getOptionalFlag } from "./cli/get-optional-flag";
+import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants/index";
+import { nullableNumber } from "./format/nullable-number";
+import { shortDate } from "./format/short-date";
+import { fetchRepoStats } from "./github/fetch-repo-stats";
+import { initI18n } from "./i18n/index";
+import { buildChineseMarkdown } from "./markdown/build-chinese-markdown";
+import { buildEnglishMarkdown } from "./markdown/build-english-markdown";
+import { buildSitePayload } from "./site/build-site-payload";
+import { writeSiteData } from "./site/write-site-data";
+import { formatConsoleSources } from "./source/format-console-sources";
+import { consoleTable } from "./table/console-table";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "./types/index";
 
 export const main = async (): Promise<void> => {
   await initI18n(process.env.LOCALE || "en");

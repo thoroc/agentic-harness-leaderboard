@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { escapeMarkdownCell } from "./escape-markdown-cell.ts";
+import { escapeMarkdownCell } from "./escape-markdown-cell";
 
 test("escapeMarkdownCell handles empty string", () => {
   expect(escapeMarkdownCell("")).toBe("");

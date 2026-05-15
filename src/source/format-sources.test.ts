@@ -1,6 +1,6 @@
 import { beforeAll, expect, test } from "bun:test";
-import { initI18n } from "../i18n/index.ts";
-import { formatSources } from "./format-sources.ts";
+import { initI18n } from "../i18n/index";
+import { formatSources } from "./format-sources";
 
 beforeAll(async () => {
   await initI18n("en");
