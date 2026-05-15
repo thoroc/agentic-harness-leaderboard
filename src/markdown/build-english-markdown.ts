@@ -1,9 +1,9 @@
-import type { OpenResult, ClosedEntry, UnknownEntry } from "../types/index.ts";
 import { generatedDate } from "../format/generated-date.ts";
-import { mdTable } from "../table/md-table.ts";
 import { nullableNumber } from "../format/nullable-number.ts";
 import { shortDate } from "../format/short-date.ts";
 import { formatSources } from "../source/format-sources.ts";
+import { mdTable } from "../table/md-table.ts";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "../types/index.ts";
 
 export const buildEnglishMarkdown = (open: OpenResult[], closed: ClosedEntry[], unknown: UnknownEntry[]): string => {
   const date = generatedDate();
@@ -47,5 +47,5 @@ export const buildEnglishMarkdown = (open: OpenResult[], closed: ClosedEntry[], 
     );
   }
 
-  return lines.join("\n") + "\n";
+  return `${lines.join("\n")}\n`;
 };

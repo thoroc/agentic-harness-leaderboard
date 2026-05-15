@@ -1,0 +1,15 @@
+pre-commit:
+  commands:
+    format:
+      run: biome check --write --no-errors-on-unmatched {staged_files}
+      glob: "*.{ts,tsx,js,jsx,json,md}"
+    lint:
+      run: biome lint --no-errors-on-unmatched {staged_files}
+      glob: "*.{ts,tsx,js,jsx,json}"
+    typecheck:
+      run: bun x tsc -p tsconfig.json --noEmit
+
+pre-push:
+  commands:
+    test:
+      run: bun test

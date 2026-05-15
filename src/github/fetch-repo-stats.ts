@@ -6,7 +6,7 @@ export const fetchRepoStats = async (repo: string, token?: string): Promise<Repo
     "User-Agent": "agent-stars-script",
     "X-GitHub-Api-Version": "2022-11-28",
   };
-  if (token) headers["Authorization"] = `Bearer ${token}`;
+  if (token) headers.Authorization = `Bearer ${token}`;
 
   try {
     const res = await fetch(`https://api.github.com/repos/${repo}`, { headers });

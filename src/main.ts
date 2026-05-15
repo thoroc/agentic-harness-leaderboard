@@ -1,18 +1,18 @@
-import type { OpenResult, ClosedEntry, UnknownEntry } from "./types/index.ts";
 import { AGENTS } from "./agents/index.ts";
-import { DEFAULT_OUTPUT, DEFAULT_ZH_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_HISTORY_OUTPUT, DEFAULT_SNAPSHOT_DIR } from "./constants/index.ts";
-import { fetchRepoStats } from "./github/fetch-repo-stats.ts";
+import { sourcesFor } from "./agents/sources-for.ts";
 import { getFlagValue } from "./cli/get-flag-value.ts";
 import { getOptionalFlag } from "./cli/get-optional-flag.ts";
-import { sourcesFor } from "./agents/sources-for.ts";
+import { DEFAULT_HISTORY_OUTPUT, DEFAULT_JSON_OUTPUT, DEFAULT_OUTPUT, DEFAULT_SNAPSHOT_DIR, DEFAULT_ZH_OUTPUT } from "./constants/index.ts";
 import { nullableNumber } from "./format/nullable-number.ts";
 import { shortDate } from "./format/short-date.ts";
-import { formatConsoleSources } from "./source/format-console-sources.ts";
-import { consoleTable } from "./table/console-table.ts";
-import { buildEnglishMarkdown } from "./markdown/build-english-markdown.ts";
+import { fetchRepoStats } from "./github/fetch-repo-stats.ts";
 import { buildChineseMarkdown } from "./markdown/build-chinese-markdown.ts";
+import { buildEnglishMarkdown } from "./markdown/build-english-markdown.ts";
 import { buildSitePayload } from "./site/build-site-payload.ts";
 import { writeSiteData } from "./site/write-site-data.ts";
+import { formatConsoleSources } from "./source/format-console-sources.ts";
+import { consoleTable } from "./table/console-table.ts";
+import type { ClosedEntry, OpenResult, UnknownEntry } from "./types/index.ts";
 
 export const main = async (): Promise<void> => {
   const token = process.env.GITHUB_TOKEN;

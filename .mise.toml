@@ -1,2 +1,4 @@
 [tools]
 bun = "latest"
+lefthook = "latest"
+biome = "latest"
