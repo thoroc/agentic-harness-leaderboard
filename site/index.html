@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent GitHub Stars</title>
+    <meta name="description" content="GitHub star counts, forks, and trends for coding AI agents." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Coding AI Agents</p>
+        <h1>Agent Stars</h1>
+      </div>
+      <nav class="links" aria-label="external links">
+        <a href="https://github.com/pantheon-org/agentic-harness-leaderboard">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="stats-grid" id="stats"></section>
+
+      <section class="panel chart-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Trend</p>
+            <h2>Stars Trend</h2>
+          </div>
+          <div class="segmented" id="trend-range" aria-label="trend range">
+            <button type="button" class="active" data-days="30">30D</button>
+            <button type="button" data-days="90">90D</button>
+            <button type="button" data-days="365">1Y</button>
+          </div>
+        </div>
+        <div id="trend-chart" class="trend-chart" aria-label="stars trend chart"></div>
+      </section>
+
+      <section class="split">
+        <div class="panel">
+          <div class="panel-head compact">
+            <div>
+              <p class="eyebrow">Share</p>
+              <h2>Kind Share</h2>
+            </div>
+          </div>
+          <div id="kind-share" class="kind-share"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head compact">
+            <div>
+              <p class="eyebrow">Growth</p>
+              <h2>30-Day Growth</h2>
+            </div>
+          </div>
+          <div id="growth-list" class="growth-list"></div>
+        </div>
+      </section>
+
+      <section class="panel board-panel">
+        <div class="panel-head board-head">
+          <div>
+            <p class="eyebrow">Leaderboard</p>
+            <h2>Agent Leaderboard</h2>
+          </div>
+          <div class="toolbar">
+            <div class="segmented" id="kind-tabs" aria-label="agent kind">
+              <button type="button" class="active" data-kind="all">All</button>
+              <button type="button" data-kind="open">Open Source</button>
+              <button type="button" data-kind="closed">Closed Source</button>
+              <button type="button" data-kind="unknown">Unknown</button>
+            </div>
+            <input id="search" type="search" placeholder="Search agent or repo" />
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Agent</th>
+                <th>Kind</th>
+                <th>Stars</th>
+                <th>30D</th>
+                <th>Forks</th>
+                <th>Last Push</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="updated-at">Loading...</span>
+      <span>Star counts from GitHub API. Source tags show discovery lists.</span>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

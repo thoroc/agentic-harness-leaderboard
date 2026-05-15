@@ -1,0 +1,50 @@
+name: Update agent stars and Pages
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - uses: actions/configure-pages@v5
+
+      - name: Generate agent stars markdown and data
+        env:
+          TZ: UTC
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          bun ./agent-stars.ts \
+            --output agent-stars.md \
+            --zh-output agent-stars.zh-CN.md \
+            --json-output site/data/latest.json \
+            --history-output site/data/history.json \
+            --snapshot-dir site/data/snapshots
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
