@@ -1,0 +1,234 @@
+{
+  "ADAL": {
+    "kind": "closed",
+    "vendor": "ADAL"
+  },
+  "Amp": {
+    "kind": "closed",
+    "vendor": "Sourcegraph"
+  },
+  "Antigravity": {
+    "kind": "closed",
+    "vendor": "Google DeepMind"
+  },
+  "Augment": {
+    "kind": "closed",
+    "vendor": "Augment"
+  },
+  "Claude Code": {
+    "kind": "open",
+    "repo": "anthropics/claude-code"
+  },
+  "Cline": {
+    "kind": "open",
+    "repo": "cline/cline"
+  },
+  "CodeBuddy": {
+    "kind": "closed",
+    "vendor": "Tencent"
+  },
+  "Codex": {
+    "kind": "open",
+    "repo": "openai/codex"
+  },
+  "Command Code": {
+    "kind": "closed",
+    "vendor": "CommandCodeAI"
+  },
+  "Continue": {
+    "kind": "open",
+    "repo": "continuedev/continue"
+  },
+  "Cortex Code": {
+    "kind": "closed",
+    "vendor": "Snowflake"
+  },
+  "Crush": {
+    "kind": "open",
+    "repo": "charmbracelet/crush"
+  },
+  "Cursor": {
+    "kind": "closed",
+    "vendor": "Anysphere"
+  },
+  "Deep Agents": {
+    "kind": "open",
+    "repo": "langchain-ai/deepagents"
+  },
+  "Droid": {
+    "kind": "closed",
+    "vendor": "Factory AI"
+  },
+  "Gemini CLI": {
+    "kind": "open",
+    "repo": "google-gemini/gemini-cli"
+  },
+  "GitHub Copilot": {
+    "kind": "closed",
+    "vendor": "Microsoft"
+  },
+  "Goose": {
+    "kind": "open",
+    "repo": "block/goose"
+  },
+  "Hermes Agent": {
+    "kind": "open",
+    "repo": "NousResearch/hermes-agent",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "IronClaw": {
+    "kind": "open",
+    "repo": "nearai/ironclaw",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Junie": {
+    "kind": "closed",
+    "vendor": "JetBrains"
+  },
+  "KiloCode": {
+    "kind": "open",
+    "repo": "Kilo-Org/kilocode"
+  },
+  "Kimi Code CLI": {
+    "kind": "closed",
+    "vendor": "Moonshot AI"
+  },
+  "Kiro": {
+    "kind": "closed",
+    "vendor": "Amazon"
+  },
+  "Kode": {
+    "kind": "open",
+    "repo": "shareAI-lab/Kode-Agent"
+  },
+  "MCPJam": {
+    "kind": "open",
+    "repo": "MCPJam/inspector"
+  },
+  "Mux": {
+    "kind": "unknown"
+  },
+  "NanoClaw": {
+    "kind": "open",
+    "repo": "qwibitai/nanoclaw",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Nanobot": {
+    "kind": "open",
+    "repo": "HKUDS/nanobot",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Neovate": {
+    "kind": "unknown"
+  },
+  "OpenClaw": {
+    "kind": "open",
+    "repo": "openclaw/openclaw",
+    "sources": [
+      "Vercel Skills",
+      "ClawCharts"
+    ]
+  },
+  "OpenCode": {
+    "kind": "open",
+    "repo": "anomalyco/opencode"
+  },
+  "OpenFang": {
+    "kind": "open",
+    "repo": "RightNow-AI/openfang",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "OpenHands": {
+    "kind": "open",
+    "repo": "All-Hands-AI/OpenHands"
+  },
+  "Paperclip": {
+    "kind": "open",
+    "repo": "paperclipai/paperclip",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Pi": {
+    "kind": "open",
+    "repo": "badlogic/pi-mono"
+  },
+  "PicoClaw": {
+    "kind": "open",
+    "repo": "sipeed/picoclaw",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Pochi": {
+    "kind": "closed",
+    "vendor": "TabbyML"
+  },
+  "Qoder": {
+    "kind": "closed",
+    "vendor": "Qoder"
+  },
+  "Qwen": {
+    "kind": "open",
+    "repo": "QwenLM/qwen-code"
+  },
+  "Replit": {
+    "kind": "closed",
+    "vendor": "Replit"
+  },
+  "Roo": {
+    "kind": "open",
+    "repo": "RooVetGit/Roo-Code"
+  },
+  "TinyClaw": {
+    "kind": "open",
+    "repo": "TinyAGI/tinyclaw",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "Trae": {
+    "kind": "open",
+    "repo": "bytedance/trae-agent"
+  },
+  "Vibe": {
+    "kind": "unknown"
+  },
+  "Warp": {
+    "kind": "open",
+    "repo": "warpdotdev/Warp"
+  },
+  "Windsurf": {
+    "kind": "closed",
+    "vendor": "Codeium"
+  },
+  "Zed": {
+    "kind": "open",
+    "repo": "zed-industries/zed"
+  },
+  "Zencoder": {
+    "kind": "closed",
+    "vendor": "Zencoder"
+  },
+  "ZeroClaw": {
+    "kind": "open",
+    "repo": "zeroclaw-labs/zeroclaw",
+    "sources": [
+      "ClawCharts"
+    ]
+  },
+  "iFlow": {
+    "kind": "open",
+    "repo": "iflow-ai/iflow-cli"
+  }
+}
