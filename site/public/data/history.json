@@ -1,6 +1,6504 @@
 {
-  "updatedAt": "2026-05-15T20:11:58.227Z",
+  "updatedAt": "2026-05-15T21:37:31.154Z",
   "snapshots": [
+    {
+      "date": "2026-02-13",
+      "generatedAt": "2026-02-13T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 37340,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 41599,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28091,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10590,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 5006,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 53386,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 1608,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 1889,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8504,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 856,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 5877,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 8989,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 86613,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 48390,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 2673,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 8193,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 6687,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7055,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10251,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6321,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 67633,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 7304,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2178,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "generatedAt": "2026-02-20T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 38066,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 41912,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28123,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10677,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 5395,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 53593,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 2367,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 2315,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8568,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 860,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 6380,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 9559,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 92296,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 49385,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 3342,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 8193,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 7248,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7367,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10335,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6338,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 67733,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 7773,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2196,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "generatedAt": "2026-02-27T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 38791,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 42224,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28155,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10763,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 5785,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 53799,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 3126,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 2741,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8633,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 864,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 6884,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10129,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 97979,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 50381,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4010,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 8193,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 7808,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7679,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10420,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6355,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 67833,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8242,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2214,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "generatedAt": "2026-03-06T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 39755,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 42551,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28182,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10830,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6004,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 53958,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 6267,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 2891,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8691,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 866,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7095,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10396,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 100355,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 51166,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4229,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 8696,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 8312,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7824,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10532,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6367,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 67928,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8435,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2221,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "generatedAt": "2026-03-13T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 40815,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 42885,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28208,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10890,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6156,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54098,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 10361,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 2931,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8746,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 868,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7188,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10542,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 101408,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 51868,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4267,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 9400,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 8793,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7903,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10655,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6377,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68020,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8517,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2224,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "generatedAt": "2026-03-18T14:00:20Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 322200,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 124560,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 98215,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 79525,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 77403,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 69340,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 66072,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 59094,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 33201,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 31927,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 26157,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 25391,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 22723,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 21582,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 20714,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 16856,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 14809,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11058,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5066,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 4596,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1811,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "generatedAt": "2026-03-20T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 41874,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 43219,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28234,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 10949,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6307,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54239,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 14455,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 2970,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8801,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 871,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7282,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10688,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 102460,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 52569,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4306,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 10105,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 9273,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 7981,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10777,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6388,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68113,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8598,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2228,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "generatedAt": "2026-03-27T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 42934,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 43553,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28260,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11009,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6459,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54379,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 18549,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3010,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8856,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 873,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7375,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10834,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 103513,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 53271,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4344,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 10809,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 9754,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8060,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10900,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6398,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68205,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8680,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2231,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "generatedAt": "2026-04-03T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 43723,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 43819,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28281,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11057,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6573,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54491,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 21657,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3039,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8900,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 874,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7446,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10946,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 104316,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 53837,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4376,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 11349,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 10146,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8120,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 10992,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6406,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68287,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8743,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2233,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "generatedAt": "2026-04-10T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 43835,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 43916,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28292,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11078,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6594,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54535,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 22300,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3044,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8916,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 875,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7461,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 10975,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 104496,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 54063,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4389,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 11477,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 10315,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8132,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 11005,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6409,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68342,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8755,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2234,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "generatedAt": "2026-04-17T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 43948,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 44014,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28303,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11098,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6615,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54578,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 22942,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3048,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8931,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 876,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7476,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 11004,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 104676,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 54289,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4401,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 11606,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 10484,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8144,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 11018,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6411,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68398,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8768,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2234,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "generatedAt": "2026-04-24T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 44060,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 44111,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28314,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11119,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6636,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54621,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 23585,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3053,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8947,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 876,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7491,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 11033,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 104855,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 54515,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4414,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 11734,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 10652,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8157,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 11032,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6414,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68453,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8780,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2235,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "generatedAt": "2026-05-01T00:00:00.000Z",
+      "agents": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 44172,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 44209,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 28325,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 11140,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 6657,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 54664,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 24228,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 3057,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 8962,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 877,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 7506,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 11062,
+          "forks": null
+        },
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 105035,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 54741,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 4427,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 11863,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 10821,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 8169,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 11045,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 6417,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": null,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 68509,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 8793,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 2235,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "generatedAt": "2026-05-02T13:41:45Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 367414,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 153365,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 119850,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 102934,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 81255,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 79509,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72504,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61277,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 52322,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 43756,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 43673,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 32925,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24092,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23826,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23758,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22118,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18826,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11448,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5130,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 4991,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1906,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "generatedAt": "2026-05-03T01:54:34Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 367419,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 153381,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 128660,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 119860,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 102936,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 81261,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 79518,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72505,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 61499,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61275,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 52368,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 43763,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 43673,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41487,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 32925,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 30904,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28659,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28486,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24093,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23827,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23760,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22120,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18829,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17108,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12101,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11448,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5130,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 4991,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3546,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1906,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "generatedAt": "2026-05-04T04:49:20Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 367984,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 154161,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 131464,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 120164,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103079,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 81542,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 79805,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72572,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 62074,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61334,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 53681,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 44226,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 43734,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41581,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 32949,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 30968,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28684,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28541,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24133,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23846,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23811,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22205,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18876,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17131,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12118,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11451,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5133,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 4995,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3550,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1908,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "generatedAt": "2026-05-05T04:25:55Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 368359,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 154747,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 132913,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 120414,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103141,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 81670,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 79973,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72620,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 62391,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61364,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 54395,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 44650,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 43780,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41636,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 32969,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31001,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28711,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28576,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24154,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23861,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23854,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22252,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18908,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17143,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12128,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11461,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5134,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 4996,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3550,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1912,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "generatedAt": "2026-05-06T04:42:34Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 368746,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 155372,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 134491,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 120698,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103222,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 81853,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 80213,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72700,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 62753,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61396,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 55169,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 45101,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 43869,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41721,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 32989,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31057,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28764,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28614,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24182,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23898,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23880,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22309,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18951,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17174,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12142,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11470,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5131,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5003,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3550,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1915,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "generatedAt": "2026-05-07T04:44:05Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 369135,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 155964,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 136244,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 121067,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103295,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82036,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 80473,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72770,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 63107,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61444,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 55880,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 45626,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 44171,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41833,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33011,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31091,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28819,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28647,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24210,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23945,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23901,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22374,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 18986,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17229,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12155,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11484,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5130,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5005,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3551,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1920,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "generatedAt": "2026-05-08T04:24:02Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 369527,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 156608,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 137850,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 121404,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103378,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82172,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 80761,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72861,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 63392,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61495,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 56428,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 46171,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 44570,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 41942,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33033,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31121,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28849,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28684,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24233,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 23989,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23918,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22436,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19017,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17264,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12168,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11489,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5130,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5009,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3552,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1928,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "generatedAt": "2026-05-09T04:33:15Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 369946,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 157172,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 139546,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 121764,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103473,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82267,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 81076,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 72947,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 63625,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61533,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 56892,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 46690,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 44772,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42037,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33048,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31158,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28882,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28710,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24244,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24025,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23946,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22503,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19053,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17288,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12177,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11496,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5132,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5013,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3553,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1928,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "generatedAt": "2026-05-10T04:53:08Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 370289,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 157647,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 141193,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 122071,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103559,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82345,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 81433,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73007,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 63821,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61562,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 57128,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 47276,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 44879,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42099,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33071,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31206,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28906,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28729,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24267,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24076,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23963,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22557,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19092,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17326,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12190,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11504,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5133,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5020,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3555,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1929,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "generatedAt": "2026-05-11T05:06:38Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 370631,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 158122,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 142937,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 122347,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103643,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82428,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 81670,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73111,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 64088,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61598,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 57361,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 47789,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 44957,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42162,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33106,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31222,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28918,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28758,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24296,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24132,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 23982,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22599,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19149,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17353,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12202,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11512,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5136,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5026,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3558,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1932,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "generatedAt": "2026-05-12T04:47:43Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 370992,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 158707,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 145278,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 122667,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103746,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82518,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 81942,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73219,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 64490,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61645,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 57683,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 48256,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 45039,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42231,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33127,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31258,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28939,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28795,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24327,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24168,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 24003,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22658,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19188,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17453,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12219,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11526,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5136,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5027,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3558,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1937,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "generatedAt": "2026-05-13T04:58:24Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 371349,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 159313,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 147294,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 122991,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103822,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82617,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 82193,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73321,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 64868,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61699,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 58032,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 48708,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 45110,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42295,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33151,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31295,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28958,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28816,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24351,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24219,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 24034,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22714,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19236,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17479,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12224,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11535,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5134,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5032,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3559,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1940,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "generatedAt": "2026-05-14T04:56:51Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 371660,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 159881,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 149021,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 123327,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103918,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82707,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 82450,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73431,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 65219,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61737,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 58277,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 49129,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 45155,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42393,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33168,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31321,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28971,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28843,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24374,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24264,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 24043,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22768,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19264,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17500,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12237,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11541,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5131,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5038,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3564,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1941,
+          "forks": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "generatedAt": "2026-05-15T05:00:36Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 371940,
+          "forks": null
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 160413,
+          "forks": null
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "nousresearch/hermes-agent",
+          "kind": "open",
+          "stars": 150711,
+          "forks": null
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 123642,
+          "forks": null
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 103996,
+          "forks": null
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82805,
+          "forks": null
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 82721,
+          "forks": null
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "all-hands-ai/openhands",
+          "kind": "open",
+          "stars": 73574,
+          "forks": null
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 65507,
+          "forks": null
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61799,
+          "forks": null
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/warp",
+          "kind": "open",
+          "stars": 58473,
+          "forks": null
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 49531,
+          "forks": null
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 45211,
+          "forks": null
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "hkuds/nanobot",
+          "kind": "open",
+          "stars": 42481,
+          "forks": null
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33192,
+          "forks": null
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31342,
+          "forks": null
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 28985,
+          "forks": null
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28865,
+          "forks": null
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "qwenlm/qwen-code",
+          "kind": "open",
+          "stars": 24394,
+          "forks": null
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24286,
+          "forks": null
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "roovetgit/roo-code",
+          "kind": "open",
+          "stars": 24067,
+          "forks": null
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22804,
+          "forks": null
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "kilo-org/kilocode",
+          "kind": "open",
+          "stars": 19296,
+          "forks": null
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "rightnow-ai/openfang",
+          "kind": "open",
+          "stars": 17520,
+          "forks": null
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12249,
+          "forks": null
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11548,
+          "forks": null
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5129,
+          "forks": null
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareai-lab/kode-agent",
+          "kind": "open",
+          "stars": 5040,
+          "forks": null
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "tinyagi/tinyclaw",
+          "kind": "open",
+          "stars": 3563,
+          "forks": null
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "mcpjam/inspector",
+          "kind": "open",
+          "stars": 1942,
+          "forks": null
+        }
+      ]
+    },
     {
       "date": "2026-05-16",
       "generatedAt": "2026-05-15T20:11:58.227Z",
