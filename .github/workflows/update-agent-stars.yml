@@ -46,7 +46,6 @@ jobs:
         run: |
           bun ./agent-stars.ts \
             --output agent-stars.md \
-            --zh-output agent-stars.zh-CN.md \
             --json-output site/public/data/latest.json \
             --history-output site/public/data/history.json \
             --snapshot-dir site/public/data/snapshots

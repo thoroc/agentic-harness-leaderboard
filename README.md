@@ -18,8 +18,7 @@ Output files (all optional via flags):
 
 | Flag | Default | Description |
 |---|---|---|
-| `--output` | `agent-stars.md` | English Markdown output |
-| `--zh-output` | `agent-stars.zh-CN.md` | Chinese Markdown output |
+| `--output` | `agent-stars.md` | Markdown output |
 | `--json-output` | `site/data/latest.json` | Website payload JSON |
 | `--history-output` | `site/data/history.json` | Historical snapshot JSON |
 | `--snapshot-dir` | `site/data/snapshots` | Per-run snapshot directory |

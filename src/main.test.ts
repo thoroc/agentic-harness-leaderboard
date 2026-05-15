@@ -100,8 +100,6 @@ test("main writes output files when flags provided", async () => {
     "main",
     "--output",
     "/tmp/test-agent-stars.md",
-    "--zh-output",
-    "/tmp/test-zh-stars.md",
     "--json-output",
     "/tmp/test-latest.json",
     "--history-output",

@@ -10,7 +10,6 @@ export const SOURCE_INFO: Record<AgentSource, { translationKey: string; url?: st
 };
 
 export const DEFAULT_OUTPUT = "agent-stars.md";
-export const DEFAULT_ZH_OUTPUT = "agent-stars.zh-CN.md";
 export const DEFAULT_JSON_OUTPUT = "site/data/latest.json";
 export const DEFAULT_HISTORY_OUTPUT = "site/data/history.json";
 export const DEFAULT_SNAPSHOT_DIR = "site/data/snapshots";
