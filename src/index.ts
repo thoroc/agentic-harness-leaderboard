@@ -1,4 +1,4 @@
-export type { AgentEntry, AgentEntryBase, AgentSource } from "./agents/index";
+export type { AgentEntry, AgentSource } from "./agents/index";
 export { AGENTS } from "./agents/index";
 export { sourcesFor } from "./agents/sources-for";
 export { getFlagValue } from "./cli/get-flag-value";

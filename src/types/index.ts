@@ -1,81 +1,101 @@
-import type { AgentSource } from "../agents/index";
+import { z } from "zod";
 
-export interface RepoStats {
-  stars: number | null;
-  forks: number | null;
-  openIssues: number | null;
-  pushedAt: string | null;
-  updatedAt: string | null;
-  description: string | null;
-  htmlUrl: string | null;
-  error?: string;
-}
+export const AgentSourceSchema = z.enum(["Vercel Skills", "ClawCharts", "Manual"]);
+export type AgentSource = z.infer<typeof AgentSourceSchema>;
 
-export interface OpenResult {
-  agent: string;
-  repo: string;
-  stats: RepoStats;
-  sources: AgentSource[];
-}
+export const RepoStatsSchema = z.object({
+  stars: z.number().nullable(),
+  forks: z.number().nullable(),
+  openIssues: z.number().nullable(),
+  pushedAt: z.string().nullable(),
+  updatedAt: z.string().nullable(),
+  description: z.string().nullable(),
+  htmlUrl: z.string().nullable(),
+  error: z.string().optional(),
+});
+export type RepoStats = z.infer<typeof RepoStatsSchema>;
 
-export interface ClosedEntry {
-  agent: string;
-  vendor: string;
-  sources: AgentSource[];
-}
+export const OpenResultSchema = z.object({
+  agent: z.string(),
+  repo: z.string(),
+  stats: RepoStatsSchema,
+  sources: AgentSourceSchema.array(),
+});
+export type OpenResult = z.infer<typeof OpenResultSchema>;
 
-export interface UnknownEntry {
-  agent: string;
-  sources: AgentSource[];
-}
+export const ClosedEntrySchema = z.object({
+  agent: z.string(),
+  vendor: z.string(),
+  sources: AgentSourceSchema.array(),
+});
+export type ClosedEntry = z.infer<typeof ClosedEntrySchema>;
 
-export interface SiteAgent {
-  id: string;
-  name: string;
-  kind: string;
-  repo: string | null;
-  vendor: string | null;
-  url: string | null;
-  stars: number | null;
-  forks: number | null;
-  openIssues: number | null;
-  pushedAt: string | null;
-  updatedAt: string | null;
-  sources: string[];
-  sourceLabels: string[];
-}
+export const UnknownEntrySchema = z.object({
+  agent: z.string(),
+  sources: AgentSourceSchema.array(),
+});
+export type UnknownEntry = z.infer<typeof UnknownEntrySchema>;
 
-export interface SitePayload {
-  generatedAt: string;
-  generatedDate: string;
-  generatedDateTime: string;
-  timezone: string;
-  totals: {
-    agents: number;
-    repos: number;
-    stars: number;
-    forks: number;
-    openAgents: number;
-    closedAgents: number;
-    unknownAgents: number;
-  };
-  agents: SiteAgent[];
-}
+export const SiteAgentSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  kind: z.string(),
+  repo: z.string().nullable(),
+  vendor: z.string().nullable(),
+  url: z.string().nullable(),
+  stars: z.number().nullable(),
+  forks: z.number().nullable(),
+  openIssues: z.number().nullable(),
+  pushedAt: z.string().nullable(),
+  updatedAt: z.string().nullable(),
+  sources: z.string().array(),
+  sourceLabels: z.string().array(),
+});
+export type SiteAgent = z.infer<typeof SiteAgentSchema>;
 
-export interface HistorySnapshot {
-  date: string;
-  generatedAt: string;
-  agents: Array<{
-    id: string;
-    name: string;
-    repo: string | null;
-    kind: string;
-    stars: number | null;
-    forks: number | null;
-  }>;
-}
+export const SitePayloadSchema = z.object({
+  generatedAt: z.string(),
+  generatedDate: z.string(),
+  generatedDateTime: z.string(),
+  timezone: z.string(),
+  totals: z.object({
+    agents: z.number(),
+    repos: z.number(),
+    stars: z.number(),
+    forks: z.number(),
+    openAgents: z.number(),
+    closedAgents: z.number(),
+    unknownAgents: z.number(),
+  }),
+  agents: SiteAgentSchema.array(),
+});
+export type SitePayload = z.infer<typeof SitePayloadSchema>;
 
-export interface HistoryPayload {
-  updatedAt: string;
-  snapshots: HistorySnapshot[];
-}
+export const HistorySnapshotAgentSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  repo: z.string().nullable(),
+  kind: z.string(),
+  stars: z.number().nullable(),
+  forks: z.number().nullable(),
+});
+
+export const HistorySnapshotSchema = z.object({
+  date: z.string(),
+  generatedAt: z.string(),
+  agents: HistorySnapshotAgentSchema.array(),
+});
+export type HistorySnapshot = z.infer<typeof HistorySnapshotSchema>;
+
+export const HistoryPayloadSchema = z.object({
+  updatedAt: z.string(),
+  snapshots: HistorySnapshotSchema.array(),
+});
+export type HistoryPayload = z.infer<typeof HistoryPayloadSchema>;
+
+export const AgentEntrySchema = z.discriminatedUnion("kind", [
+  z.object({ kind: z.literal("open"), repo: z.string(), sources: AgentSourceSchema.array().optional() }),
+  z.object({ kind: z.literal("closed"), vendor: z.string(), sources: AgentSourceSchema.array().optional() }),
+  z.object({ kind: z.literal("unknown"), sources: AgentSourceSchema.array().optional() }),
+]);
+export type AgentEntry = z.infer<typeof AgentEntrySchema>;
