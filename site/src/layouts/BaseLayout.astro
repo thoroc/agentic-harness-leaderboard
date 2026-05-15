@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+const { generatedDateTime, timezone } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent GitHub Stars</title>
+    <meta name="description" content="GitHub star counts, forks, and trends for coding AI agents." />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Coding AI Agents</p>
+        <h1>Agent Stars</h1>
+      </div>
+      <nav class="links" aria-label="external links">
+        <a href="https://github.com/pantheon-org/agentic-harness-leaderboard">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <span>{generatedDateTime} {timezone}</span>
+      <span>Star counts from GitHub API. Source tags show discovery lists.</span>
+    </footer>
+  </body>
+</html>

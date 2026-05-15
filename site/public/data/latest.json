@@ -1,0 +1,988 @@
+{
+  "generatedAt": "2026-05-15T20:11:58.227Z",
+  "generatedDate": "2026-05-16",
+  "generatedDateTime": "2026/05/16 04:11",
+  "timezone": "Asia/Shanghai",
+  "totals": {
+    "agents": 51,
+    "repos": 30,
+    "stars": 1770298,
+    "forks": 270852,
+    "openAgents": 30,
+    "closedAgents": 18,
+    "unknownAgents": 3
+  },
+  "agents": [
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "kind": "open",
+      "repo": "openclaw/openclaw",
+      "vendor": null,
+      "url": "https://github.com/openclaw/openclaw",
+      "stars": 372167,
+      "forks": 77065,
+      "openIssues": 7040,
+      "pushedAt": "2026-05-15T20:09:07Z",
+      "updatedAt": "2026-05-15T20:09:08Z",
+      "sources": [
+        "Vercel Skills",
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "Vercel Skills",
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "kind": "open",
+      "repo": "anomalyco/opencode",
+      "vendor": null,
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 160796,
+      "forks": 18868,
+      "openIssues": 5996,
+      "pushedAt": "2026-05-15T20:11:12Z",
+      "updatedAt": "2026-05-15T20:07:00Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "hermes-agent",
+      "name": "Hermes Agent",
+      "kind": "open",
+      "repo": "NousResearch/hermes-agent",
+      "vendor": null,
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 151831,
+      "forks": 24110,
+      "openIssues": 11477,
+      "pushedAt": "2026-05-15T19:35:09Z",
+      "updatedAt": "2026-05-15T20:10:10Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "kind": "open",
+      "repo": "anthropics/claude-code",
+      "vendor": null,
+      "url": "https://github.com/anthropics/claude-code",
+      "stars": 123879,
+      "forks": 20418,
+      "openIssues": 11093,
+      "pushedAt": "2026-05-14T22:55:09Z",
+      "updatedAt": "2026-05-15T20:05:50Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "kind": "open",
+      "repo": "google-gemini/gemini-cli",
+      "vendor": null,
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 104053,
+      "forks": 13663,
+      "openIssues": 1774,
+      "pushedAt": "2026-05-15T20:03:27Z",
+      "updatedAt": "2026-05-15T20:08:08Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "kind": "open",
+      "repo": "openai/codex",
+      "vendor": null,
+      "url": "https://github.com/openai/codex",
+      "stars": 82893,
+      "forks": 12005,
+      "openIssues": 4335,
+      "pushedAt": "2026-05-15T20:09:28Z",
+      "updatedAt": "2026-05-15T20:09:34Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "kind": "open",
+      "repo": "zed-industries/zed",
+      "vendor": null,
+      "url": "https://github.com/zed-industries/zed",
+      "stars": 82867,
+      "forks": 8497,
+      "openIssues": 3030,
+      "pushedAt": "2026-05-15T19:17:44Z",
+      "updatedAt": "2026-05-15T19:52:59Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "kind": "open",
+      "repo": "All-Hands-AI/OpenHands",
+      "vendor": null,
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "stars": 73655,
+      "forks": 9309,
+      "openIssues": 412,
+      "pushedAt": "2026-05-15T20:09:38Z",
+      "updatedAt": "2026-05-15T20:08:40Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "paperclip",
+      "name": "Paperclip",
+      "kind": "open",
+      "repo": "paperclipai/paperclip",
+      "vendor": null,
+      "url": "https://github.com/paperclipai/paperclip",
+      "stars": 65667,
+      "forks": 11932,
+      "openIssues": 3772,
+      "pushedAt": "2026-05-15T19:14:10Z",
+      "updatedAt": "2026-05-15T20:08:47Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "kind": "open",
+      "repo": "cline/cline",
+      "vendor": null,
+      "url": "https://github.com/cline/cline",
+      "stars": 61839,
+      "forks": 6429,
+      "openIssues": 872,
+      "pushedAt": "2026-05-15T20:06:50Z",
+      "updatedAt": "2026-05-15T19:03:42Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "warp",
+      "name": "Warp",
+      "kind": "open",
+      "repo": "warpdotdev/Warp",
+      "vendor": null,
+      "url": "https://github.com/warpdotdev/Warp",
+      "stars": 58574,
+      "forks": 4532,
+      "openIssues": 3786,
+      "pushedAt": "2026-05-15T20:05:02Z",
+      "updatedAt": "2026-05-15T20:09:03Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "pi",
+      "name": "Pi",
+      "kind": "open",
+      "repo": "badlogic/pi-mono",
+      "vendor": null,
+      "url": "https://github.com/badlogic/pi-mono",
+      "stars": 49869,
+      "forks": 5913,
+      "openIssues": 54,
+      "pushedAt": "2026-05-15T13:27:03Z",
+      "updatedAt": "2026-05-15T20:06:04Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "goose",
+      "name": "Goose",
+      "kind": "open",
+      "repo": "block/goose",
+      "vendor": null,
+      "url": "https://github.com/block/goose",
+      "stars": 45249,
+      "forks": 4637,
+      "openIssues": 220,
+      "pushedAt": "2026-05-15T18:48:51Z",
+      "updatedAt": "2026-05-15T19:57:37Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "nanobot",
+      "name": "Nanobot",
+      "kind": "open",
+      "repo": "HKUDS/nanobot",
+      "vendor": null,
+      "url": "https://github.com/HKUDS/nanobot",
+      "stars": 42536,
+      "forks": 7472,
+      "openIssues": 890,
+      "pushedAt": "2026-05-15T17:55:55Z",
+      "updatedAt": "2026-05-15T19:45:55Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "kind": "open",
+      "repo": "continuedev/continue",
+      "vendor": null,
+      "url": "https://github.com/continuedev/continue",
+      "stars": 33212,
+      "forks": 4510,
+      "openIssues": 762,
+      "pushedAt": "2026-05-15T15:51:46Z",
+      "updatedAt": "2026-05-15T19:48:16Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "zeroclaw",
+      "name": "ZeroClaw",
+      "kind": "open",
+      "repo": "zeroclaw-labs/zeroclaw",
+      "vendor": null,
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "stars": 31367,
+      "forks": 4616,
+      "openIssues": 449,
+      "pushedAt": "2026-05-15T16:27:04Z",
+      "updatedAt": "2026-05-15T19:53:32Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "picoclaw",
+      "name": "PicoClaw",
+      "kind": "open",
+      "repo": "sipeed/picoclaw",
+      "vendor": null,
+      "url": "https://github.com/sipeed/picoclaw",
+      "stars": 29000,
+      "forks": 4151,
+      "openIssues": 115,
+      "pushedAt": "2026-05-15T14:06:08Z",
+      "updatedAt": "2026-05-15T19:43:14Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "nanoclaw",
+      "name": "NanoClaw",
+      "kind": "open",
+      "repo": "qwibitai/nanoclaw",
+      "vendor": null,
+      "url": "https://github.com/qwibitai/nanoclaw",
+      "stars": 28883,
+      "forks": 12812,
+      "openIssues": 649,
+      "pushedAt": "2026-05-15T19:08:20Z",
+      "updatedAt": "2026-05-15T19:56:52Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "kind": "open",
+      "repo": "QwenLM/qwen-code",
+      "vendor": null,
+      "url": "https://github.com/QwenLM/qwen-code",
+      "stars": 24409,
+      "forks": 2374,
+      "openIssues": 788,
+      "pushedAt": "2026-05-15T17:26:14Z",
+      "updatedAt": "2026-05-15T18:49:21Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "crush",
+      "name": "Crush",
+      "kind": "open",
+      "repo": "charmbracelet/crush",
+      "vendor": null,
+      "url": "https://github.com/charmbracelet/crush",
+      "stars": 24314,
+      "forks": 1685,
+      "openIssues": 427,
+      "pushedAt": "2026-05-15T20:05:33Z",
+      "updatedAt": "2026-05-15T19:17:43Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "roo",
+      "name": "Roo",
+      "kind": "open",
+      "repo": "RooVetGit/Roo-Code",
+      "vendor": null,
+      "url": "https://github.com/RooVetGit/Roo-Code",
+      "stars": 24078,
+      "forks": 3252,
+      "openIssues": 1042,
+      "pushedAt": "2026-05-15T18:08:47Z",
+      "updatedAt": "2026-05-15T19:40:08Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "deep-agents",
+      "name": "Deep Agents",
+      "kind": "open",
+      "repo": "langchain-ai/deepagents",
+      "vendor": null,
+      "url": "https://github.com/langchain-ai/deepagents",
+      "stars": 22825,
+      "forks": 3216,
+      "openIssues": 170,
+      "pushedAt": "2026-05-15T19:52:57Z",
+      "updatedAt": "2026-05-15T20:03:16Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "kilocode",
+      "name": "KiloCode",
+      "kind": "open",
+      "repo": "Kilo-Org/kilocode",
+      "vendor": null,
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "stars": 19315,
+      "forks": 2537,
+      "openIssues": 1200,
+      "pushedAt": "2026-05-15T19:32:34Z",
+      "updatedAt": "2026-05-15T19:14:03Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "openfang",
+      "name": "OpenFang",
+      "kind": "open",
+      "repo": "RightNow-AI/openfang",
+      "vendor": null,
+      "url": "https://github.com/RightNow-AI/openfang",
+      "stars": 17530,
+      "forks": 2242,
+      "openIssues": 64,
+      "pushedAt": "2026-05-14T08:28:37Z",
+      "updatedAt": "2026-05-15T19:57:41Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "ironclaw",
+      "name": "IronClaw",
+      "kind": "open",
+      "repo": "nearai/ironclaw",
+      "vendor": null,
+      "url": "https://github.com/nearai/ironclaw",
+      "stars": 12258,
+      "forks": 1424,
+      "openIssues": 920,
+      "pushedAt": "2026-05-15T19:57:24Z",
+      "updatedAt": "2026-05-15T18:31:23Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "kind": "open",
+      "repo": "bytedance/trae-agent",
+      "vendor": null,
+      "url": "https://github.com/bytedance/trae-agent",
+      "stars": 11551,
+      "forks": 1269,
+      "openIssues": 134,
+      "pushedAt": "2026-02-05T11:21:00Z",
+      "updatedAt": "2026-05-15T19:57:39Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "iflow",
+      "name": "iFlow",
+      "kind": "open",
+      "repo": "iflow-ai/iflow-cli",
+      "vendor": null,
+      "url": "https://github.com/iflow-ai/iflow-cli",
+      "stars": 5131,
+      "forks": 421,
+      "openIssues": 84,
+      "pushedAt": "2026-03-20T03:00:54Z",
+      "updatedAt": "2026-05-15T14:29:43Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "kode",
+      "name": "Kode",
+      "kind": "open",
+      "repo": "shareAI-lab/Kode-Agent",
+      "vendor": null,
+      "url": "https://github.com/shareAI-lab/Kode-Agent",
+      "stars": 5042,
+      "forks": 758,
+      "openIssues": 91,
+      "pushedAt": "2026-05-11T14:27:33Z",
+      "updatedAt": "2026-05-15T10:30:40Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "tinyclaw",
+      "name": "TinyClaw",
+      "kind": "open",
+      "repo": "TinyAGI/tinyclaw",
+      "vendor": null,
+      "url": "https://github.com/TinyAGI/tinyclaw",
+      "stars": 3564,
+      "forks": 506,
+      "openIssues": 61,
+      "pushedAt": "2026-03-30T12:34:57Z",
+      "updatedAt": "2026-05-15T09:49:46Z",
+      "sources": [
+        "ClawCharts"
+      ],
+      "sourceLabels": [
+        "ClawCharts"
+      ]
+    },
+    {
+      "id": "mcpjam",
+      "name": "MCPJam",
+      "kind": "open",
+      "repo": "MCPJam/inspector",
+      "vendor": null,
+      "url": "https://github.com/MCPJam/inspector",
+      "stars": 1944,
+      "forks": 229,
+      "openIssues": 119,
+      "pushedAt": "2026-05-15T05:51:31Z",
+      "updatedAt": "2026-05-15T11:06:28Z",
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "adal",
+      "name": "ADAL",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "ADAL",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Sourcegraph",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Google DeepMind",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "augment",
+      "name": "Augment",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Augment",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "codebuddy",
+      "name": "CodeBuddy",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Tencent",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "command-code",
+      "name": "Command Code",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "CommandCodeAI",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "cortex-code",
+      "name": "Cortex Code",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Snowflake",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Anysphere",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "droid",
+      "name": "Droid",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Factory AI",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Microsoft",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "junie",
+      "name": "Junie",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "JetBrains",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "kimi-code-cli",
+      "name": "Kimi Code CLI",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Moonshot AI",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Amazon",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "pochi",
+      "name": "Pochi",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "TabbyML",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "qoder",
+      "name": "Qoder",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Qoder",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Replit",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Codeium",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "zencoder",
+      "name": "Zencoder",
+      "kind": "closed",
+      "repo": null,
+      "vendor": "Zencoder",
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "mux",
+      "name": "Mux",
+      "kind": "unknown",
+      "repo": null,
+      "vendor": null,
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "neovate",
+      "name": "Neovate",
+      "kind": "unknown",
+      "repo": null,
+      "vendor": null,
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    },
+    {
+      "id": "vibe",
+      "name": "Vibe",
+      "kind": "unknown",
+      "repo": null,
+      "vendor": null,
+      "url": null,
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "pushedAt": null,
+      "updatedAt": null,
+      "sources": [
+        "Vercel Skills"
+      ],
+      "sourceLabels": [
+        "Vercel Skills"
+      ]
+    }
+  ]
+}

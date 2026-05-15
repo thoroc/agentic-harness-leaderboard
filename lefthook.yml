@@ -1,5 +1,12 @@
 pre-commit:
   commands:
+    no-index-imports:
+      run: |
+        if grep -nE 'from\s+["'\''](.*/)?index["'\'']' {staged_files}; then
+          echo "ERROR: Use directory paths ('./foo') instead of '/index' ('./foo/index') in imports."
+          exit 1
+        fi
+      glob: "*.{ts,tsx}"
     format:
       run: biome check --write --no-errors-on-unmatched {staged_files}
       glob: "*.{ts,tsx,js,jsx,json,md}"

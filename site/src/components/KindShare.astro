@@ -1,0 +1,38 @@
+---
+import type { SitePayload } from "../data/types";
+
+interface Props {
+  payload: SitePayload;
+}
+
+const { payload } = Astro.props;
+
+const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
+
+const totals: Record<string, number> = {};
+for (const agent of payload.agents) {
+  const key = agent.kind === "open" ? "Open Source" : agent.kind === "closed" ? "Closed Source" : "Unknown";
+  totals[key] = (totals[key] ?? 0) + (agent.stars ?? 0);
+}
+
+const rows = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+const max = Math.max(1, ...rows.map(([, stars]) => stars));
+---
+
+<section class="panel">
+  <div class="panel-head compact">
+    <div>
+      <p class="eyebrow">Share</p>
+      <h2>Kind Share</h2>
+    </div>
+  </div>
+  <div class="kind-share">
+    {rows.map(([name, stars], index) => (
+      <div class="kind-row">
+        <div class="kind-name">{name}</div>
+        <div class="bar"><span style={`width:${Math.max(2, (stars / max) * 100)}%;background:${colors[index % colors.length]}`}></span></div>
+        <div class="kind-value">{stars.toLocaleString("en-US")}</div>
+      </div>
+    ))}
+  </div>
+</section>

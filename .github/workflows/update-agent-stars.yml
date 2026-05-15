@@ -30,7 +30,16 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      - name: Generate agent stars markdown and data
+      - name: Install CLI dependencies
+        run: bun install
+
+      - name: Download previous history from live site
+        run: |
+          mkdir -p site/public/data/snapshots
+          curl -sf "https://pantheon-org.github.io/agentic-harness-leaderboard/data/history.json" \
+            -o site/public/data/history.json || echo "No previous history found"
+
+      - name: Generate agent stars data for site
         env:
           TZ: UTC
           GITHUB_TOKEN: ${{ github.token }}
@@ -38,13 +47,19 @@ jobs:
           bun ./agent-stars.ts \
             --output agent-stars.md \
             --zh-output agent-stars.zh-CN.md \
-            --json-output site/data/latest.json \
-            --history-output site/data/history.json \
-            --snapshot-dir site/data/snapshots
+            --json-output site/public/data/latest.json \
+            --history-output site/public/data/history.json \
+            --snapshot-dir site/public/data/snapshots
+
+      - name: Install and build Astro site
+        working-directory: ./site
+        run: |
+          bun install
+          bunx astro build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: site/dist
 
       - id: deployment
         uses: actions/deploy-pages@v4

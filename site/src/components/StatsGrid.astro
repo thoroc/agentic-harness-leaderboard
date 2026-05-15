@@ -1,0 +1,52 @@
+---
+import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+
+interface Props {
+  payload: SitePayload;
+  history: HistoryPayload;
+}
+
+const { payload, history } = Astro.props;
+
+function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
+  return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
+}
+
+function deltaFor(stars: number | null, id: string, days: number): number {
+  const snapshots = history?.snapshots ?? [];
+  if (!snapshots.length || typeof stars !== "number") return 0;
+  const latestTime = Date.parse(payload.generatedAt);
+  const target = latestTime - days * 24 * 60 * 60 * 1000;
+  const ordered = snapshots.slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+  const baseline = [...ordered].reverse().find((item) => Date.parse(item.generatedAt) <= target) ?? ordered[0];
+  const previous = snapshotValue(baseline, id);
+  return typeof previous === "number" ? stars - previous : 0;
+}
+
+const openStars = payload.agents.filter((a) => a.kind === "open").reduce((s, a) => s + (a.stars ?? 0), 0);
+const top = payload.agents.filter((a) => a.repo).sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name))[0];
+const thirtyDayGrowth = payload.agents.reduce((s, a) => s + Math.max(0, deltaFor(a.stars, a.id, 30)), 0);
+---
+
+<section class="stats-grid">
+  <article class="stat">
+    <div class="stat-label">Total Stars</div>
+    <div class="stat-value">{payload.totals.stars.toLocaleString("en-US")}</div>
+    <div class="stat-foot">{payload.totals.repos} repos tracked</div>
+  </article>
+  <article class="stat">
+    <div class="stat-label">Open Source Stars</div>
+    <div class="stat-value">{openStars.toLocaleString("en-US")}</div>
+    <div class="stat-foot">{payload.totals.openAgents} open source agents</div>
+  </article>
+  <article class="stat">
+    <div class="stat-label">30D Growth</div>
+    <div class="stat-value">+{thirtyDayGrowth.toLocaleString("en-US")}</div>
+    <div class="stat-foot">based on daily snapshots</div>
+  </article>
+  <article class="stat">
+    <div class="stat-label">Current Leader</div>
+    <div class="stat-value">{top?.name ?? "N/A"}</div>
+    <div class="stat-foot">{top ? `${top.stars?.toLocaleString("en-US")} stars` : "N/A"}</div>
+  </article>
+</section>

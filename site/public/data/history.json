@@ -1,0 +1,251 @@
+{
+  "updatedAt": "2026-05-15T20:11:58.227Z",
+  "snapshots": [
+    {
+      "date": "2026-05-16",
+      "generatedAt": "2026-05-15T20:11:58.227Z",
+      "agents": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "repo": "openclaw/openclaw",
+          "kind": "open",
+          "stars": 372167,
+          "forks": 77065
+        },
+        {
+          "id": "opencode",
+          "name": "OpenCode",
+          "repo": "anomalyco/opencode",
+          "kind": "open",
+          "stars": 160796,
+          "forks": 18868
+        },
+        {
+          "id": "hermes-agent",
+          "name": "Hermes Agent",
+          "repo": "NousResearch/hermes-agent",
+          "kind": "open",
+          "stars": 151831,
+          "forks": 24110
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "repo": "anthropics/claude-code",
+          "kind": "open",
+          "stars": 123879,
+          "forks": 20418
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "repo": "google-gemini/gemini-cli",
+          "kind": "open",
+          "stars": 104053,
+          "forks": 13663
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "repo": "openai/codex",
+          "kind": "open",
+          "stars": 82893,
+          "forks": 12005
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "repo": "zed-industries/zed",
+          "kind": "open",
+          "stars": 82867,
+          "forks": 8497
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "repo": "All-Hands-AI/OpenHands",
+          "kind": "open",
+          "stars": 73655,
+          "forks": 9309
+        },
+        {
+          "id": "paperclip",
+          "name": "Paperclip",
+          "repo": "paperclipai/paperclip",
+          "kind": "open",
+          "stars": 65667,
+          "forks": 11932
+        },
+        {
+          "id": "cline",
+          "name": "Cline",
+          "repo": "cline/cline",
+          "kind": "open",
+          "stars": 61839,
+          "forks": 6429
+        },
+        {
+          "id": "warp",
+          "name": "Warp",
+          "repo": "warpdotdev/Warp",
+          "kind": "open",
+          "stars": 58574,
+          "forks": 4532
+        },
+        {
+          "id": "pi",
+          "name": "Pi",
+          "repo": "badlogic/pi-mono",
+          "kind": "open",
+          "stars": 49869,
+          "forks": 5913
+        },
+        {
+          "id": "goose",
+          "name": "Goose",
+          "repo": "block/goose",
+          "kind": "open",
+          "stars": 45249,
+          "forks": 4637
+        },
+        {
+          "id": "nanobot",
+          "name": "Nanobot",
+          "repo": "HKUDS/nanobot",
+          "kind": "open",
+          "stars": 42536,
+          "forks": 7472
+        },
+        {
+          "id": "continue",
+          "name": "Continue",
+          "repo": "continuedev/continue",
+          "kind": "open",
+          "stars": 33212,
+          "forks": 4510
+        },
+        {
+          "id": "zeroclaw",
+          "name": "ZeroClaw",
+          "repo": "zeroclaw-labs/zeroclaw",
+          "kind": "open",
+          "stars": 31367,
+          "forks": 4616
+        },
+        {
+          "id": "picoclaw",
+          "name": "PicoClaw",
+          "repo": "sipeed/picoclaw",
+          "kind": "open",
+          "stars": 29000,
+          "forks": 4151
+        },
+        {
+          "id": "nanoclaw",
+          "name": "NanoClaw",
+          "repo": "qwibitai/nanoclaw",
+          "kind": "open",
+          "stars": 28883,
+          "forks": 12812
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "repo": "QwenLM/qwen-code",
+          "kind": "open",
+          "stars": 24409,
+          "forks": 2374
+        },
+        {
+          "id": "crush",
+          "name": "Crush",
+          "repo": "charmbracelet/crush",
+          "kind": "open",
+          "stars": 24314,
+          "forks": 1685
+        },
+        {
+          "id": "roo",
+          "name": "Roo",
+          "repo": "RooVetGit/Roo-Code",
+          "kind": "open",
+          "stars": 24078,
+          "forks": 3252
+        },
+        {
+          "id": "deep-agents",
+          "name": "Deep Agents",
+          "repo": "langchain-ai/deepagents",
+          "kind": "open",
+          "stars": 22825,
+          "forks": 3216
+        },
+        {
+          "id": "kilocode",
+          "name": "KiloCode",
+          "repo": "Kilo-Org/kilocode",
+          "kind": "open",
+          "stars": 19315,
+          "forks": 2537
+        },
+        {
+          "id": "openfang",
+          "name": "OpenFang",
+          "repo": "RightNow-AI/openfang",
+          "kind": "open",
+          "stars": 17530,
+          "forks": 2242
+        },
+        {
+          "id": "ironclaw",
+          "name": "IronClaw",
+          "repo": "nearai/ironclaw",
+          "kind": "open",
+          "stars": 12258,
+          "forks": 1424
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "repo": "bytedance/trae-agent",
+          "kind": "open",
+          "stars": 11551,
+          "forks": 1269
+        },
+        {
+          "id": "iflow",
+          "name": "iFlow",
+          "repo": "iflow-ai/iflow-cli",
+          "kind": "open",
+          "stars": 5131,
+          "forks": 421
+        },
+        {
+          "id": "kode",
+          "name": "Kode",
+          "repo": "shareAI-lab/Kode-Agent",
+          "kind": "open",
+          "stars": 5042,
+          "forks": 758
+        },
+        {
+          "id": "tinyclaw",
+          "name": "TinyClaw",
+          "repo": "TinyAGI/tinyclaw",
+          "kind": "open",
+          "stars": 3564,
+          "forks": 506
+        },
+        {
+          "id": "mcpjam",
+          "name": "MCPJam",
+          "repo": "MCPJam/inspector",
+          "kind": "open",
+          "stars": 1944,
+          "forks": 229
+        }
+      ]
+    }
+  ]
+}

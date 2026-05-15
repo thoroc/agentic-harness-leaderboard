@@ -1,0 +1,188 @@
+---
+import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+
+interface Props {
+  payload: SitePayload;
+  history: HistoryPayload;
+}
+
+const { payload, history } = Astro.props;
+
+const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
+
+function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
+  return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
+}
+
+function renderTrendSvg(rangeDays: number): string {
+  const snapshots = (history?.snapshots ?? []).slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+  const topAgents = payload.agents.filter((a) => a.repo).sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name)).slice(0, 6);
+  const latestTime = Date.parse(payload.generatedAt);
+  const minTime = latestTime - rangeDays * 24 * 60 * 60 * 1000;
+  let visible = snapshots.filter((item) => Date.parse(item.generatedAt) >= minTime);
+  if (visible.length < 2 && snapshots.length) visible = snapshots.slice(-Math.min(2, snapshots.length));
+  if (!visible.some((item) => item.generatedAt === payload.generatedAt)) {
+    visible.push({
+      generatedAt: payload.generatedAt,
+      date: payload.generatedDate,
+      agents: payload.agents.map((a) => ({ id: a.id, name: a.name, repo: a.repo, kind: a.kind, stars: a.stars, forks: a.forks })),
+    });
+  }
+
+  const values: number[] = [];
+  for (const agent of topAgents) {
+    for (const snap of visible) {
+      values.push(snapshotValue(snap, agent.id) ?? agent.stars ?? 0);
+    }
+  }
+  const min = Math.min(...values, 0);
+  const max = Math.max(...values, 1);
+
+  const pad = 38;
+  const width = 980;
+  const height = 330;
+  const plotW = width - pad * 2;
+  const plotH = height - pad * 2;
+
+  const x = (i: number) => pad + (visible.length <= 1 ? plotW : (i / (visible.length - 1)) * plotW);
+  const y = (v: number) => pad + (1 - (v - min) / Math.max(1, max - min)) * plotH;
+
+  const lines = topAgents.map((agent, pIndex) => {
+    const points = visible.map((snap, i) => `${x(i)},${y(snapshotValue(snap, agent.id) ?? agent.stars ?? 0)}`).join(" ");
+    return `<polyline fill="none" stroke="${colors[pIndex % colors.length]}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${points}" />`;
+  }).join("");
+
+  const dots = topAgents.map((agent, pIndex) =>
+    visible.map((snap, i) => {
+      const v = snapshotValue(snap, agent.id) ?? agent.stars ?? 0;
+      return `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${colors[pIndex % colors.length]}" />`;
+    }).join("")
+  ).join("");
+
+  const grid = [0, 0.25, 0.5, 0.75, 1].map((t) => {
+    const yy = pad + t * plotH;
+    const value = Math.round(max - t * (max - min));
+    return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString("en-US")}</text>`;
+  }).join("");
+
+  const labels = visible.map((snap, i) => `<text class="chart-label" x="${x(i) - 18}" y="${height - 10}">${snap.date.slice(5)}</text>`).join("");
+
+  const legend = topAgents.map((agent, index) => `<span><i style="background:${colors[index % colors.length]}"></i>${escapeHtml(agent.name)}</span>`).join("");
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" role="img">
+      ${grid}
+      <line class="axis" x1="${pad}" y1="${height - pad}" x2="${width - pad}" y2="${height - pad}" />
+      ${lines}
+      ${dots}
+      ${labels}
+    </svg>
+    <div class="legend">${legend}</div>
+  `;
+}
+
+function escapeHtml(value: string): string {
+  return String(value ?? "").replace(/[&<>"']/g, (ch: string) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch] ?? ""
+  );
+}
+---
+
+<section class="panel chart-panel" id="trend-container">
+  <div class="panel-head">
+    <div>
+      <p class="eyebrow">Trend</p>
+      <h2>Stars Trend</h2>
+    </div>
+    <div class="segmented" id="trend-range">
+      <button type="button" class="active" data-days="30">30D</button>
+      <button type="button" data-days="90">90D</button>
+      <button type="button" data-days="365">1Y</button>
+    </div>
+  </div>
+  <div id="trend-chart" class="trend-chart" aria-label="stars trend chart" set:html={renderTrendSvg(30)} />
+</section>
+
+<script define:vars={{ payload, history }}>
+  // @ts-nocheck
+  const COLORS = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
+
+  function snapshotValue(snapshot, id) {
+    return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
+  }
+
+  function renderTrendSvgClient(rangeDays) {
+    const snapshots = (history?.snapshots ?? []).slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+    const topAgents = payload.agents.filter((a) => a.repo).sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name)).slice(0, 6);
+    const latestTime = Date.parse(payload.generatedAt);
+    const minTime = latestTime - rangeDays * 24 * 60 * 60 * 1000;
+    let visible = snapshots.filter((item) => Date.parse(item.generatedAt) >= minTime);
+    if (visible.length < 2 && snapshots.length) visible = snapshots.slice(-Math.min(2, snapshots.length));
+    if (!visible.some((item) => item.generatedAt === payload.generatedAt)) {
+      visible.push({
+        generatedAt: payload.generatedAt,
+        date: payload.generatedDate,
+        agents: payload.agents.map((a) => ({ id: a.id, name: a.name, repo: a.repo, kind: a.kind, stars: a.stars, forks: a.forks })),
+      });
+    }
+
+    const values = [];
+    for (const agent of topAgents) {
+      for (const snap of visible) {
+        values.push(snapshotValue(snap, agent.id) ?? agent.stars ?? 0);
+      }
+    }
+    const min = Math.min(...values, 0);
+    const max = Math.max(...values, 1);
+
+    const pad = 38, width = 980, height = 330;
+    const plotW = width - pad * 2, plotH = height - pad * 2;
+
+    const x = (i) => pad + (visible.length <= 1 ? plotW : (i / (visible.length - 1)) * plotW);
+    const y = (v) => pad + (1 - (v - min) / Math.max(1, max - min)) * plotH;
+
+    const lines = topAgents.map((agent, pIndex) => {
+      const points = visible.map((snap, i) => `${x(i)},${y(snapshotValue(snap, agent.id) ?? agent.stars ?? 0)}`).join(" ");
+      return `<polyline fill="none" stroke="${COLORS[pIndex % COLORS.length]}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${points}" />`;
+    }).join("");
+
+    const dots = topAgents.map((agent, pIndex) =>
+      visible.map((snap, i) => {
+        const v = snapshotValue(snap, agent.id) ?? agent.stars ?? 0;
+        return `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${COLORS[pIndex % COLORS.length]}" />`;
+      }).join("")
+    ).join("");
+
+    const grid = [0, 0.25, 0.5, 0.75, 1].map((t) => {
+      const yy = pad + t * plotH;
+      const value = Math.round(max - t * (max - min));
+      return `<line class="grid" x1="${pad}" y1="${yy}" x2="${width - pad}" y2="${yy}" /><text class="chart-label" x="8" y="${yy + 4}">${value.toLocaleString("en-US")}</text>`;
+    }).join("");
+
+    const labels = visible.map((snap, i) => `<text class="chart-label" x="${x(i) - 18}" y="${height - 10}">${snap.date.slice(5)}</text>`).join("");
+    const legend = topAgents.map((agent, index) => `<span><i style="background:${COLORS[index % COLORS.length]}"></i>${agent.name.replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch])}</span>`).join("");
+
+    return `
+      <svg viewBox="0 0 ${width} ${height}" role="img">
+        ${grid}
+        <line class="axis" x1="${pad}" y1="${height - pad}" x2="${width - pad}" y2="${height - pad}" />
+        ${lines}
+        ${dots}
+        ${labels}
+      </svg>
+      <div class="legend">${legend}</div>
+    `;
+  }
+
+  const rangeEl = document.getElementById("trend-range");
+  if (rangeEl) {
+    rangeEl.addEventListener("click", (e) => {
+      const button = e.target.closest("button[data-days]");
+      if (!button) return;
+      const days = Number(button.dataset.days);
+      rangeEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === button));
+      const chart = document.getElementById("trend-chart");
+      if (chart) chart.innerHTML = renderTrendSvgClient(days);
+    });
+  }
+</script>

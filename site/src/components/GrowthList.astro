@@ -1,0 +1,53 @@
+---
+import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+
+interface Props {
+  payload: SitePayload;
+  history: HistoryPayload;
+}
+
+const { payload, history } = Astro.props;
+
+const colors = ["#24735a", "#159092", "#c7506a", "#aa7a16", "#406faf", "#7357a8", "#d46f2b", "#4e7f3b"];
+
+function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
+  return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
+}
+
+function deltaFor(stars: number | null, id: string, days: number): number {
+  const snapshots = history?.snapshots ?? [];
+  if (!snapshots.length || typeof stars !== "number") return 0;
+  const latestTime = Date.parse(payload.generatedAt);
+  const target = latestTime - days * 24 * 60 * 60 * 1000;
+  const ordered = snapshots.slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+  const baseline = [...ordered].reverse().find((item) => Date.parse(item.generatedAt) <= target) ?? ordered[0];
+  const previous = snapshotValue(baseline, id);
+  return typeof previous === "number" ? stars - previous : 0;
+}
+
+const rows = payload.agents
+  .filter((a) => a.repo)
+  .map((a) => ({ agent: a, delta: deltaFor(a.stars, a.id, 30) }))
+  .sort((a, b) => b.delta - a.delta || ((b.agent.stars ?? -1) - (a.agent.stars ?? -1) || a.agent.name.localeCompare(b.agent.name)))
+  .slice(0, 8);
+
+const maxDelta = Math.max(1, ...rows.map((r) => Math.max(0, r.delta)));
+---
+
+<section class="panel">
+  <div class="panel-head compact">
+    <div>
+      <p class="eyebrow">Growth</p>
+      <h2>30-Day Growth</h2>
+    </div>
+  </div>
+  <div class="growth-list">
+    {rows.map(({ agent, delta }, index) => (
+      <div class="growth-row">
+        <a class="growth-name" href={agent.url ?? "#"}>{agent.name}</a>
+        <div class="bar"><span style={`width:${Math.max(2, (Math.max(0, delta) / maxDelta) * 100)}%;background:${colors[index % colors.length]}`}></span></div>
+        <div class="growth-delta">+{delta.toLocaleString("en-US")}</div>
+      </div>
+    ))}
+  </div>
+</section>

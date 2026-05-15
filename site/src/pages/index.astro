@@ -1,0 +1,41 @@
+---
+import { readFileSync, existsSync } from "node:fs";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import StatsGrid from "../components/StatsGrid.astro";
+import TrendChart from "../components/TrendChart.astro";
+import KindShare from "../components/KindShare.astro";
+import GrowthList from "../components/GrowthList.astro";
+import LeaderboardTable from "../components/LeaderboardTable.astro";
+import type { SitePayload, HistoryPayload } from "../data/types";
+
+let latest: SitePayload = {
+  generatedAt: new Date().toISOString(),
+  generatedDate: "",
+  generatedDateTime: "",
+  timezone: "UTC",
+  totals: { agents: 0, repos: 0, stars: 0, forks: 0, openAgents: 0, closedAgents: 0, unknownAgents: 0 },
+  agents: [],
+};
+let history: HistoryPayload = { updatedAt: "", snapshots: [] };
+
+try {
+  const latestPath = "public/data/latest.json";
+  const historyPath = "public/data/history.json";
+  if (existsSync(latestPath)) {
+    latest = JSON.parse(readFileSync(latestPath, "utf-8"));
+  }
+  if (existsSync(historyPath)) {
+    history = JSON.parse(readFileSync(historyPath, "utf-8"));
+  }
+} catch {}
+---
+
+<BaseLayout generatedDateTime={latest.generatedDateTime} timezone={latest.timezone}>
+  <StatsGrid payload={latest} history={history} />
+  <TrendChart payload={latest} history={history} />
+  <div class="split">
+    <KindShare payload={latest} />
+    <GrowthList payload={latest} history={history} />
+  </div>
+  <LeaderboardTable payload={latest} history={history} />
+</BaseLayout>

@@ -1,0 +1,129 @@
+---
+import type { SitePayload, HistoryPayload, HistorySnapshot } from "../data/types";
+
+interface Props {
+  payload: SitePayload;
+  history: HistoryPayload;
+}
+
+const { payload, history } = Astro.props;
+
+function snapshotValue(snapshot: HistorySnapshot, id: string): number | null {
+  return snapshot?.agents?.find((a) => a.id === id)?.stars ?? null;
+}
+
+function deltaFor(stars: number | null, id: string, days: number): number {
+  const snapshots = history?.snapshots ?? [];
+  if (!snapshots.length || typeof stars !== "number") return 0;
+  const latestTime = Date.parse(payload.generatedAt);
+  const target = latestTime - days * 24 * 60 * 60 * 1000;
+  const ordered = snapshots.slice().sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+  const baseline = [...ordered].reverse().find((item) => Date.parse(item.generatedAt) <= target) ?? ordered[0];
+  const previous = snapshotValue(baseline, id);
+  return typeof previous === "number" ? stars - previous : 0;
+}
+
+const agents = payload.agents.slice().sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name));
+
+function shortDate(value: string | null): string {
+  return value ? String(value).slice(0, 10) : "N/A";
+}
+
+function kindLabel(kind: string): string {
+  return kind === "open" ? "Open Source" : kind === "closed" ? "Closed Source" : "Unknown";
+}
+
+function searchText(agent: (typeof agents)[number]): string {
+  return [agent.name, agent.repo, agent.vendor, ...agent.sources].filter(Boolean).join(" ").toLowerCase();
+}
+---
+
+<section class="panel board-panel">
+  <div class="panel-head board-head">
+    <div>
+      <p class="eyebrow">Leaderboard</p>
+      <h2>Agent Leaderboard</h2>
+    </div>
+    <div class="toolbar">
+      <div class="segmented" id="kind-tabs">
+        <button type="button" class="active" data-kind="all">All</button>
+        <button type="button" data-kind="open">Open Source</button>
+        <button type="button" data-kind="closed">Closed Source</button>
+        <button type="button" data-kind="unknown">Unknown</button>
+      </div>
+      <input id="search" type="search" placeholder="Search agent or repo" />
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Agent</th>
+          <th>Kind</th>
+          <th>Stars</th>
+          <th>30D</th>
+          <th>Forks</th>
+          <th>Last Push</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard">
+        {agents.map((agent, i) => (
+          <tr data-kind={agent.kind} data-search={searchText(agent)}>
+            <td>{i + 1}</td>
+            <td class="agent-cell">
+              <a href={agent.url ?? "#"}><strong>{agent.name}</strong></a>
+              <span>{agent.repo ?? agent.vendor ?? "N/A"}</span>
+            </td>
+            <td><span class="badge">{kindLabel(agent.kind)}</span></td>
+            <td>{typeof agent.stars === "number" ? agent.stars.toLocaleString("en-US") : "N/A"}</td>
+            <td>{deltaFor(agent.stars, agent.id, 30).toLocaleString("en-US")}</td>
+            <td>{typeof agent.forks === "number" ? agent.forks.toLocaleString("en-US") : "N/A"}</td>
+            <td>{shortDate(agent.pushedAt)}</td>
+            <td>{agent.sources?.join(", ") ?? ""}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  // @ts-nocheck
+  const tabsEl = document.getElementById("kind-tabs");
+  const searchEl = document.getElementById("search");
+  const tbody = document.getElementById("leaderboard");
+
+  let currentKind = "all";
+  let currentQuery = "";
+
+  function filterRows() {
+    if (!tbody) return;
+    const q = currentQuery.trim().toLowerCase();
+    for (const row of tbody.children) {
+      const kind = row.getAttribute("data-kind");
+      const search = row.getAttribute("data-search") ?? "";
+      const kindMatch = currentKind === "all" || kind === currentKind;
+      const queryMatch = !q || search.includes(q);
+      row.style.display = kindMatch && queryMatch ? "" : "none";
+    }
+  }
+
+  if (tabsEl) {
+    tabsEl.addEventListener("click", (e) => {
+      const button = e.target.closest("button[data-kind]");
+      if (!button) return;
+      currentKind = button.dataset.kind;
+      tabsEl.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === button));
+      filterRows();
+    });
+  }
+
+  if (searchEl) {
+    searchEl.addEventListener("input", () => {
+      currentQuery = searchEl.value;
+      filterRows();
+    });
+  }
+</script>
